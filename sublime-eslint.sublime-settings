@@ -1,13 +1,13 @@
 {
-    //Uses system installed jslint.js (node.js based), instead of bundled JSLint jar
-    "use_node_jslint": false,
+    //Uses system installed eslint.js (node.js based), instead of bundled JSLint jar
+    "use_node_eslint": True,
 
     //Path to the jslint.js
     //Leave blank to use default JSLint path
     "node_jslint_path": "",
 
     //Options passed to jslint.js
-    "node_jslint_options": "",
+    "node_eslint_options": "",
 
     //Path to the JSLint jar.
     //Leave blank to use bundled jar.

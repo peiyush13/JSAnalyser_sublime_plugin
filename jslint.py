@@ -11,8 +11,8 @@ except ImportError:
     from .statusprocess import *
     from .asyncprocess import *
 
-RESULT_VIEW_NAME = 'jslint_result_view'
-SETTINGS_FILE = "sublime-jslint.sublime-settings"
+RESULT_VIEW_NAME = 'eslint_result_view'
+SETTINGS_FILE = "sublime-eslint.sublime-settings"
 
 
 class ShowJslintResultCommand(sublime_plugin.WindowCommand):
@@ -36,25 +36,19 @@ class JslintCommand(sublime_plugin.WindowCommand):
         self.tests_panel_showed = False
         self.ignored_error_count = 0
         self.ignore_errors = s.get('ignore_errors', [])
-        self.use_node_jslint = s.get('use_node_jslint', True)
+        self.use_node_eslint = s.get('use_node_eslint', True)
 
         self.init_tests_panel()
 
         # if (self.use_node_jslint):
 
-        cmd = 'jslint ' + s.get('node_jslint_options', '') + ' "' + file_path + '"'
+        cmd = 'jslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"'
 
-        # else:
-        #     if len(s.get('jslint_jar', '')) > 0:
-        #         jslint_jar = s.get('jslint_jar')
-        #     else:
-        #         jslint_jar = sublime.packages_path() + '/sublime-jslint/jslint4java-2.0.5-SNAPSHOT.jar'
-        #     cmd = 'java -jar "' + jslint_jar + '" ' + s.get('jslint_options', '') + ' "' + file_path + '"'
 
         AsyncProcess(cmd, self)
-        StatusProcess('Starting JSLint for file ' + file_name, self)
+        StatusProcess('Starting ESLint for file ' + file_name, self)
 
-        JsLintEventListener.disabled = True
+        EsLintEventListener.disabled = True
 
     def init_tests_panel(self):
         if not hasattr(self, 'output_view'):
@@ -93,7 +87,7 @@ class JslintCommand(sublime_plugin.WindowCommand):
 
         # ignore error.
         text = data
-        if (len(self.ignore_errors) > 0) and (not self.use_node_jslint):
+        if (len(self.ignore_errors) > 0) and (not self.use_node_eslint):
             text = ''
             for line in data.split('\n'):
                 if len(line) == 0:
@@ -117,7 +111,7 @@ class JslintCommand(sublime_plugin.WindowCommand):
         with Edit(self.output_view, True) as edit:
             edit.insert(self.output_view.size(), text)
 
-        if end and not self.use_node_jslint:
+        if end and not self.use_node_eslint:
             text = '\njslint: ignored ' + str(self.ignored_error_count) + ' errors.\n\n'
             with Edit(self.output_view, True) as edit:
                 edit.insert(0, text)
@@ -132,10 +126,10 @@ class JslintCommand(sublime_plugin.WindowCommand):
             msg = ''
         self.append_data(proc, msg.encode('utf-8'), True)
 
-        JsLintEventListener.disabled = False
+        EsLintEventListener.disabled = False
 
 
-class JsLintEventListener(sublime_plugin.EventListener):
+class EsLintEventListener(sublime_plugin.EventListener):
     """jslint event"""
     disabled = False
 
@@ -163,7 +157,7 @@ class JsLintEventListener(sublime_plugin.EventListener):
             self.file_view.erase_regions(RESULT_VIEW_NAME)
 
     def on_selection_modified(self, view):
-        if JsLintEventListener.disabled:
+        if EsLintEventListener.disabled:
             return
         if view.name() != RESULT_VIEW_NAME:
             return
@@ -176,7 +170,7 @@ class JsLintEventListener(sublime_plugin.EventListener):
         self.previous_resion = region
 
         # extract line from jslint result.
-        if (s.get('use_node_jslint', False)):
+        if (s.get('use_node_eslint', False)):
             pattern_position = "\\/\\/ Line (\d+), Pos (\d+)$"
             text = view.substr(region)
             text = re.findall(pattern_position, text)
