@@ -1,0 +1,58 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Lint",
+                "id": "lint",
+                "children":
+                [
+                    {
+                        "caption": "Run ESLint",
+                        "command": "jslint"
+                    },
+                    {
+                        "caption": "Show ESLint Result",
+                        "command": "show_jslint_result"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "ESLint",
+                        "children":
+                        [
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/sublime-eslint/sublime-eslint.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/sublime-eslint.sublime-settings"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
