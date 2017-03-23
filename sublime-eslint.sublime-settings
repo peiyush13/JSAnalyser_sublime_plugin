@@ -1,20 +1,12 @@
 {
-    //Uses system installed eslint.js (node.js based), instead of bundled JSLint jar
-    "use_node_eslint": True,
+    //Uses system installed eslint.js (node.js based)
+    "use_node_eslint": true,
 
-    //Path to the jslint.js
-    //Leave blank to use default JSLint path
-    "node_jslint_path": "",
 
-    //Options passed to jslint.js
+    //Options passed to eslint.js
     "node_eslint_options": "",
 
-    //Path to the JSLint jar.
-    //Leave blank to use bundled jar.
-    "jslint_jar": "",
 
-    //Options passed to JSLint.
-    "jslint_options": "",
 
     //Errors and RegEx to be ignored
     "ignore_errors":
@@ -22,8 +14,8 @@
         //"Expected an identifier and instead saw 'undefined' \(a reserved word\)"
     ],
 
-    //Run JSLint on save.
-    "run_on_save": false,
+    //Run ESLint on save.
+    "run_on_save": true,
 
     //Debug flag.
     "debug": false
