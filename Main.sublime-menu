@@ -10,11 +10,11 @@
                 [
                     {
                         "caption": "Run ESLint",
-                        "command": "jslint"
+                        "command": "eslint"
                     },
                     {
                         "caption": "Show ESLint Result",
-                        "command": "show_jslint_result"
+                        "command": "show_eslint_result"
                     }
                 ]
             }

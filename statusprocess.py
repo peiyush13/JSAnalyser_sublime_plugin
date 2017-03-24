@@ -11,8 +11,8 @@ class StatusProcess(object):
     def __init__(self, msg, listener):
         self.msg = msg
         self.listener = listener
-        myThread = threading.Thread(target=self.run_thread)
-        myThread.start()
+        Thread1 = threading.Thread(target=self.run_thread)
+        Thread1.start()
 
     def run_thread(self):
         progress = ""
