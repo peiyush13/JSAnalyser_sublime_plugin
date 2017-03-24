@@ -23,7 +23,7 @@ class ShowEslintResultCommand(sublime_plugin.WindowCommand):
         self.window.run_command("show_panel", {"panel": "output." + RESULT_VIEW_NAME})
 
 
-class JslintCommand(sublime_plugin.WindowCommand):
+class EslintCommand(sublime_plugin.WindowCommand):
     def run(self):
         s = sublime.load_settings(SETTINGS_FILE)
 
@@ -141,52 +141,54 @@ class EsLintEventListener(sublime_plugin.EventListener):
         if self.file_view:
             self.file_view.erase_regions(RESULT_VIEW_NAME)
 
-            # def on_selection_modified(self, view):
-            #     if EsLintEventListener.disabled:
-            #         return
-            #     if view.name() != RESULT_VIEW_NAME:
-            #         return
-            #     region = view.line(view.sel()[0])
-            #     s = sublime.load_settings(SETTINGS_FILE)
-            #
-            #     # make sure call once.
-            #     if self.previous_resion == region:
-            #         return
-            #     self.previous_resion = region
-            #
-            #     # extract line from jslint result.
-            #     if (s.get('use_node_eslint', False)):
-            #         pattern_position = "\\/\\/ Line (\d+), Pos (\d+)$"
-            #         text = view.substr(region)
-            #         text = re.findall(pattern_position, text)
-            #         if len(text) > 0:
-            #             line = int(text[0][0])
-            #             col = int(text[0][1])
-            #     else:
-            #         text = view.substr(region).split(':')
-            #         if len(text) < 4 or text[0] != 'jslint' or re.match('\d+', text[2]) is None or re.match('\d+', text[3]) is None:
-            #                 return
-            #         line = int(text[2])
-            #         col = int(text[3])
-            #
-            #     # hightligh view line.
-            #     view.add_regions(RESULT_VIEW_NAME, [region], "comment")
-            #
-            #     # find the file view.
-            #     file_path = view.settings().get('file_path')
-            #     window = sublime.active_window()
-            #     file_view = None
-            #     for v in window.views():
-            #         if v.file_name() == file_path:
-            #             file_view = v
-            #             break
-            #     if file_view is None:
-            #         return
-            #
-            #     self.file_view = file_view
-            #     window.focus_view(file_view)
-            #     file_view.run_command("goto_line", {"line": line})
-            #     file_region = file_view.line(file_view.sel()[0])
-            #
-            #     # highlight file_view line
-            #     file_view.add_regions(RESULT_VIEW_NAME, [file_region], "string")
+            def on_selection_modified(self, view):
+                if EsLintEventListener.disabled:
+                    return
+                if view.name() != RESULT_VIEW_NAME:
+                    return
+                # RESULT_VIEW_NAME is a panel
+                region = view.line(view.sel()[0])
+                s = sublime.load_settings(SETTINGS_FILE)
+
+                # make sure call once.
+                if self.previous_resion == region:
+                    return
+                self.previous_resion = region
+
+                # extract line from jslint result.
+                if (s.get('use_node_eslint', False)):
+                    pattern_position = "\\/\\/ Line (\d+), Pos (\d+)$"
+                    text = view.substr(region)
+                    text = re.findall(pattern_position, text)
+                    if len(text) > 0:
+                        line = int(text[0][0])
+                        col = int(text[0][1])
+                else:
+                    text = view.substr(region).split(':')
+                    if len(text) < 4 or text[0] != 'jslint' or re.match('\d+', text[2]) is None or re.match('\d+', text[3]) is None:
+                            return
+                    line = int(text[2])
+                    col = int(text[3])
+
+                # hightligh view line.
+                view.add_regions(RESULT_VIEW_NAME, [region], "comment")
+
+                # find the file view.
+                file_path = view.settings().get('file_path')
+                window = sublime.active_window()
+                file_view = None
+                for v in window.views():
+                    if v.file_name() == file_path:
+                        file_view = v
+                        break
+                if file_view is None:
+                    return
+
+                self.file_view = file_view
+                window.focus_view(file_view)
+                file_view.run_command("goto_line", {"line": line})
+                file_region =\
+                    file_view.line(file_view.sel()[0])
+
+                # highlight file_view line
+                file_view.add_regions(RESULT_VIEW_NAME, [file_region], "string")
