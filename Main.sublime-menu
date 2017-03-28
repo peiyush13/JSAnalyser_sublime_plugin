@@ -4,16 +4,16 @@
         "children":
         [
             {
-                "caption": "Lint",
+                "caption": "JSAnalyser",
                 "id": "lint",
                 "children":
                 [
                     {
-                        "caption": "Run ESLint",
+                        "caption": "Run JSAnalyser",
                         "command": "eslint"
                     },
                     {
-                        "caption": "Show ESLint Result",
+                        "caption": "Show JSAnalyser Result",
                         "command": "show_eslint_result"
                     },
                     {
@@ -23,6 +23,10 @@
                     {
                         "caption": "Import configuration file",
                         "command": "import_config"
+                    },
+                    {
+                        "caption": "Reset to global configuration ",
+                        "command": "reset_config"
                     }
                 ]
             }

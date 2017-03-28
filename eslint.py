@@ -16,8 +16,7 @@ except ImportError:
 
 def getDefaultConf():
     path = os.path.realpath(__file__).split("\\")
-    defaultpath = path[0] + "\\" + path[1] + "\\" + path[2] + "\\" + ".eslintrc.json"
-    return defaultpath
+    return path[0] + "\\" + path[1] + "\\" + path[2] + "\\" + ".eslintrc.json"
 
 
 def getTempConf():
@@ -25,40 +24,14 @@ def getTempConf():
     path[len(path) - 1] = "";
     folder = "\\".join(path)
     file_path = folder + "config_file.txt"
-    # print(file_path)
-    file = open(file_path,"r")
-    text=file.read()
+    file = open(file_path, "r")
+    return file.read()
 
-    return text
 
 RESULT_VIEW_NAME = 'eslint_result_view'
 SETTINGS_FILE = "sublime-eslint.sublime-settings"
 GLOBAL_CONFIG_FILE = getDefaultConf()
 TEMP_CONFIG_FILE = getTempConf()
-
-
-class ShowEslintResultCommand(sublime_plugin.WindowCommand):
-    # show Eslint result
-
-    def run(self):
-        self.window.run_command("show_panel", {"panel": "output." + RESULT_VIEW_NAME})
-
-
-class ImportConfigCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        path = os.path.realpath(__file__).split("\\")
-        path[len(path) - 1] = "";
-        folder = "\\".join(path)
-        cmd = "python " + "\"" + folder + "fileselection.py" + "\""
-        process = os.popen(cmd)
-        result = process.read()
-        result = result.encode('ascii', 'ignore').decode('ascii')
-        result = re.split(r'\s{2,}', result)
-        # TEMP_CONFIG_FILE = result[0]
-        file_path = folder + "config_file.txt"
-        file = open(file_path, "w")
-        file.flush()
-        file.write(result[0])
 
 
 class EslintCommand(sublime_plugin.WindowCommand):
@@ -78,13 +51,11 @@ class EslintCommand(sublime_plugin.WindowCommand):
 
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
 
-
         if TEMP_CONFIG_FILE == "":
             cmd += GLOBAL_CONFIG_FILE
 
         else:
             cmd += TEMP_CONFIG_FILE
-            print("hello")
 
         AsyncProcess(cmd, self)
         StatusProcess('Starting ESLint for file ' + file_name, self)
@@ -113,8 +84,8 @@ class EslintCommand(sublime_plugin.WindowCommand):
     def append_data(self, proc, bData, end=False):
         if self.debug:
             print("DEBUG: append_data start")
-        data = bData.decode('utf-8')
-        data = re.split(r'\s{2,}', data)
+
+        data = re.split(r'\s{2,}', bData.decode('utf-8'))
         count = 0
         data[count] += "\n"
         while count < len(data) - 2:
@@ -231,6 +202,14 @@ class EsLintEventListener(sublime_plugin.EventListener):
         file_view.add_regions(RESULT_VIEW_NAME, [file_region], "invalid", "dot")
 
 
+class ShowEslintResultCommand(sublime_plugin.WindowCommand):
+
+    # show Eslint result
+
+    def run(self):
+        self.window.run_command("show_panel", {"panel": "output." + RESULT_VIEW_NAME})
+
+
 class ConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
         path = os.path.realpath(__file__).split("\\")
@@ -238,3 +217,31 @@ class ConfigCommand(sublime_plugin.WindowCommand):
         folder = "\\".join(path)
         cmd = "java -jar " + "\"" + folder + "EslintEditor.jar" + "\""
         process = os.popen(cmd)
+
+
+class ImportConfigCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        path = os.path.realpath(__file__).split("\\")
+        path[len(path) - 1] = "";
+        folder = "\\".join(path)
+        cmd = "python " + "\"" + folder + "fileselection.py" + "\""
+        process = os.popen(cmd)
+        result = process.read()
+        result = result.encode('ascii', 'ignore').decode('ascii')
+        result = re.split(r'\s{2,}', result)
+        # TEMP_CONFIG_FILE = result[0]
+        file_path = folder + "config_file.txt"
+        file = open(file_path, "w")
+        file.flush()
+        file.write(result[0])
+
+
+class ResetConfigCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        path = os.path.realpath(__file__).split("\\")
+        path[len(path) - 1] = "";
+        folder = "\\".join(path)
+        file_path = folder + "config_file.txt"
+        file = open(file_path, "w")
+        file.flush()
+        TEMP_CONFIG_FILE = ""

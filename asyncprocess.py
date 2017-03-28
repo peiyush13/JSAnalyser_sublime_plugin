@@ -36,7 +36,6 @@ class AsyncProcess(object):
 
             self.pollThread = threading.Thread(target=self.poll)
             self.pollThread.start()
-        
 
     def poll(self):
         while True:

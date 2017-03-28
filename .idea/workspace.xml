@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cacb7c3-ef30-428f-9da7-74a73138fd8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fileselection.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config_file" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jslint.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jslint4java-2.0.5-SNAPSHOT.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.sublime-menu" afterPath="$PROJECT_DIR$/Main.sublime-menu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asyncprocess.py" afterPath="$PROJECT_DIR$/asyncprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_file.txt" afterPath="$PROJECT_DIR$/config_file.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eslint.py" afterPath="$PROJECT_DIR$/eslint.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,27 +27,21 @@
       <file leaf-file-name="Main.sublime-menu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eslint.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eslint.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eslint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="214" column="16" lean-forward="false" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#2622#2892#0" expanded="false" />
-                <element signature="e#2934#3107#0" expanded="false" />
-                <element signature="e#3148#3263#0" expanded="false" />
-                <element signature="e#3353#4231#0" expanded="false" />
-                <element signature="e#4652#6678#0" expanded="false" />
-                <element signature="e#5126#5303#0" expanded="false" />
-                <element signature="e#5356#6678#0" expanded="false" />
+                <element signature="e#85#173#0" expanded="false" />
+                <element signature="e#468#670#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,8 +50,8 @@
       <file leaf-file-name="config_file.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,18 +60,18 @@
       <file leaf-file-name="asyncprocess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asyncprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileselection.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fileselection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fileselection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -153,9 +148,10 @@
         <option value="$PROJECT_DIR$/sublime.py" />
         <option value="$PROJECT_DIR$/edit_buffer.py" />
         <option value="$PROJECT_DIR$/importconfig.py" />
-        <option value="$PROJECT_DIR$/Main.sublime-menu" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/Main.sublime-menu" />
         <option value="$PROJECT_DIR$/eslint.py" />
+        <option value="$PROJECT_DIR$/asyncprocess.py" />
       </list>
     </option>
   </component>
@@ -511,7 +507,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/eslint.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -770,16 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fileselection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -806,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asyncprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Default.sublime-commands">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -830,35 +815,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eslint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="214" column="16" lean-forward="false" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#2622#2892#0" expanded="false" />
-            <element signature="e#2934#3107#0" expanded="false" />
-            <element signature="e#3148#3263#0" expanded="false" />
-            <element signature="e#3353#4231#0" expanded="false" />
-            <element signature="e#4652#6678#0" expanded="false" />
-            <element signature="e#5126#5303#0" expanded="false" />
-            <element signature="e#5356#6678#0" expanded="false" />
+            <element signature="e#85#173#0" expanded="false" />
+            <element signature="e#468#670#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asyncprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileselection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
