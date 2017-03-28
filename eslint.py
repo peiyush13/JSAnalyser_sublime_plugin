@@ -50,7 +50,11 @@ class EslintCommand(sublime_plugin.WindowCommand):
 
         self.init_tests_panel()
 
+        print(GLOBAL_CONFIG_FILE)
+        print(TEMP_CONFIG_FILE)
+
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
+
 
         if TEMP_CONFIG_FILE == "":
             cmd += GLOBAL_CONFIG_FILE
@@ -180,6 +184,7 @@ class EsLintEventListener(sublime_plugin.EventListener):
 
         line = text[4]
 
+
         # hightlight view line.
         view.add_regions(RESULT_VIEW_NAME, [region], "comment")
 
@@ -206,8 +211,8 @@ class EsLintEventListener(sublime_plugin.EventListener):
         else:
             file_view.add_regions(RESULT_VIEW_NAME, [file_region], "comment")
 
-
 class ShowEslintResultCommand(sublime_plugin.WindowCommand):
+
     # show Eslint result
 
     def run(self):
@@ -248,4 +253,4 @@ class ResetConfigCommand(sublime_plugin.WindowCommand):
         file_path = folder + "config_file.txt"
         file = open(file_path, "w")
         file.flush()
-        TEMP_CONFIG_FILE = ""
+        TEMP_CONFIG_FILE =""
