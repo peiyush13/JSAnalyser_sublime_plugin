@@ -15,6 +15,14 @@
                     {
                         "caption": "Show ESLint Result",
                         "command": "show_eslint_result"
+                    },
+                    {
+                        "caption": "Configure Rules",
+                        "command": "config"
+                    },
+                    {
+                        "caption": "Import configuration file",
+                        "command": "import_config"
                     }
                 ]
             }

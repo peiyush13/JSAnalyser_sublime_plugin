@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 import sublime
 import sublime_plugin
 
@@ -12,8 +13,28 @@ except ImportError:
     from .statusprocess import *
     from .asyncprocess import *
 
+
+def getDefaultConf():
+    path = os.path.realpath(__file__).split("\\")
+    defaultpath = path[0] + "\\" + path[1] + "\\" + path[2] + "\\" + ".eslintrc.json"
+    return defaultpath
+
+
+def getTempConf():
+    path = os.path.realpath(__file__).split("\\")
+    path[len(path) - 1] = "";
+    folder = "\\".join(path)
+    file_path = folder + "config_file.txt"
+    # print(file_path)
+    file = open(file_path,"r")
+    text=file.read()
+
+    return text
+
 RESULT_VIEW_NAME = 'eslint_result_view'
 SETTINGS_FILE = "sublime-eslint.sublime-settings"
+GLOBAL_CONFIG_FILE = getDefaultConf()
+TEMP_CONFIG_FILE = getTempConf()
 
 
 class ShowEslintResultCommand(sublime_plugin.WindowCommand):
@@ -21,6 +42,23 @@ class ShowEslintResultCommand(sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command("show_panel", {"panel": "output." + RESULT_VIEW_NAME})
+
+
+class ImportConfigCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        path = os.path.realpath(__file__).split("\\")
+        path[len(path) - 1] = "";
+        folder = "\\".join(path)
+        cmd = "python " + "\"" + folder + "fileselection.py" + "\""
+        process = os.popen(cmd)
+        result = process.read()
+        result = result.encode('ascii', 'ignore').decode('ascii')
+        result = re.split(r'\s{2,}', result)
+        # TEMP_CONFIG_FILE = result[0]
+        file_path = folder + "config_file.txt"
+        file = open(file_path, "w")
+        file.flush()
+        file.write(result[0])
 
 
 class EslintCommand(sublime_plugin.WindowCommand):
@@ -38,7 +76,15 @@ class EslintCommand(sublime_plugin.WindowCommand):
 
         self.init_tests_panel()
 
-        cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"'
+        cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
+
+
+        if TEMP_CONFIG_FILE == "":
+            cmd += GLOBAL_CONFIG_FILE
+
+        else:
+            cmd += TEMP_CONFIG_FILE
+            print("hello")
 
         AsyncProcess(cmd, self)
         StatusProcess('Starting ESLint for file ' + file_name, self)
@@ -63,34 +109,34 @@ class EslintCommand(sublime_plugin.WindowCommand):
         with Edit(self.output_view, True) as edit:
             edit.erase(sublime.Region(0, self.output_view.size()))
 
-    #appending data to the result
+    # appending data to the result
     def append_data(self, proc, bData, end=False):
         if self.debug:
             print("DEBUG: append_data start")
         data = bData.decode('utf-8')
         data = re.split(r'\s{2,}', data)
         count = 0
-        data[count]+="\n"
-        while count < len(data)-2:
+        data[count] += "\n"
+        while count < len(data) - 2:
 
             if count % 4 == 0:
-                data[count]+="\n"
+                data[count] += "\n"
 
-            if (count+1)%4==0:
-                data[count]+="\t"
+            if (count + 1) % 4 == 0:
+                data[count] += "\t"
 
-            if (count+2)%4==0:
-                data[count]+="\t"
+            if (count + 2) % 4 == 0:
+                data[count] += "\t"
 
             if (count + 3) % 4 == 0:
-                temp=list(data[count])
-                temp[0]=" Line No=> "+temp[0]+" "
-                temp[2]= " Position=> "+ temp[2]+ " "
-                data[count]="".join(temp)
+                temp = data[count].split(":")
+                temp[0] = " Line No=> " + temp[0] + " "
+                temp[1] = " Position=> " + temp[1] + " "
+                data[count] = "".join(temp)
 
             count += 1
 
-        data=" ".join(data)
+        data = " ".join(data)
 
         self.show_tests_panel()
 
@@ -146,7 +192,6 @@ class EsLintEventListener(sublime_plugin.EventListener):
         # RESULT_VIEW_NAME is a panel
         region = view.line(view.sel()[0])
 
-
         s = sublime.load_settings(SETTINGS_FILE)
 
         # make sure call once.
@@ -180,7 +225,16 @@ class EsLintEventListener(sublime_plugin.EventListener):
         self.file_view = file_view
         window.focus_view(file_view)
         file_view.run_command("goto_line", {"line": line})
-        file_region =file_view.line(file_view.sel()[0])
+        file_region = file_view.line(file_view.sel()[0])
 
         # # highlight file_view line
-        file_view.add_regions(RESULT_VIEW_NAME, [file_region], "string")
+        file_view.add_regions(RESULT_VIEW_NAME, [file_region], "invalid", "dot")
+
+
+class ConfigCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        path = os.path.realpath(__file__).split("\\")
+        path[len(path) - 1] = "";
+        folder = "\\".join(path)
+        cmd = "java -jar " + "\"" + folder + "EslintEditor.jar" + "\""
+        process = os.popen(cmd)
