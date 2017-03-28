@@ -37,7 +37,8 @@ TEMP_CONFIG_FILE = getTempConf()
 class EslintCommand(sublime_plugin.WindowCommand):
     def run(self):
         s = sublime.load_settings(SETTINGS_FILE)
-
+        GLOBAL_CONFIG_FILE = getDefaultConf()
+        TEMP_CONFIG_FILE = getTempConf()
         file_path = self.window.active_view().file_name()
         file_name = os.path.basename(file_path)
         self.debug = s.get('debug', False)
@@ -199,11 +200,14 @@ class EsLintEventListener(sublime_plugin.EventListener):
         file_region = file_view.line(file_view.sel()[0])
 
         # # highlight file_view line
-        file_view.add_regions(RESULT_VIEW_NAME, [file_region], "invalid", "dot")
+        print(text[9])
+        if text[9].startswith("err"):
+            file_view.add_regions(RESULT_VIEW_NAME, [file_region], "invalid", "dot")
+        else:
+            file_view.add_regions(RESULT_VIEW_NAME, [file_region], "comment")
 
 
 class ShowEslintResultCommand(sublime_plugin.WindowCommand):
-
     # show Eslint result
 
     def run(self):
