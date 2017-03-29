@@ -16,8 +16,10 @@ except ImportError:
 
 def getDefaultConf():
     path = os.path.realpath(__file__).split("\\")
-    return path[0] + "\\" + path[1] + "\\" + path[2] + "\\" + ".eslintrc.json"
-
+    path[len(path) - 1] = "";
+    folder = "\\".join(path)
+    file_path = folder + "global.json"
+    return "\""+file_path+"\""
 
 def getTempConf():
     path = os.path.realpath(__file__).split("\\")
@@ -39,6 +41,7 @@ class EslintCommand(sublime_plugin.WindowCommand):
         s = sublime.load_settings(SETTINGS_FILE)
         GLOBAL_CONFIG_FILE = getDefaultConf()
         TEMP_CONFIG_FILE = getTempConf()
+
         file_path = self.window.active_view().file_name()
         file_name = os.path.basename(file_path)
         self.debug = s.get('debug', False)
@@ -51,10 +54,8 @@ class EslintCommand(sublime_plugin.WindowCommand):
         self.init_tests_panel()
 
         print(GLOBAL_CONFIG_FILE)
-        print(TEMP_CONFIG_FILE)
 
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
-
 
         if TEMP_CONFIG_FILE == "":
             cmd += GLOBAL_CONFIG_FILE
@@ -62,6 +63,7 @@ class EslintCommand(sublime_plugin.WindowCommand):
         else:
             cmd += TEMP_CONFIG_FILE
 
+        print(cmd)
         AsyncProcess(cmd, self)
         StatusProcess('Starting ESLint for file ' + file_name, self)
 
@@ -175,15 +177,15 @@ class EsLintEventListener(sublime_plugin.EventListener):
             return
         self.previous_resion = region
 
+        totalstring = view.substr(region)
         # extract line from eslint result.
-        text = view.substr(region).split(' ')
+        text = totalstring.split(' ')
 
         # validation for result region selection
-        if text[2] != "Line":
+        if 'Line' not in totalstring:
             return
 
         line = text[4]
-
 
         # hightlight view line.
         view.add_regions(RESULT_VIEW_NAME, [region], "comment")
@@ -205,14 +207,14 @@ class EsLintEventListener(sublime_plugin.EventListener):
         file_region = file_view.line(file_view.sel()[0])
 
         # # highlight file_view line
-        print(text[9])
-        if text[9].startswith("err"):
+
+        if 'error' in totalstring:
             file_view.add_regions(RESULT_VIEW_NAME, [file_region], "invalid", "dot")
         else:
             file_view.add_regions(RESULT_VIEW_NAME, [file_region], "comment")
 
-class ShowEslintResultCommand(sublime_plugin.WindowCommand):
 
+class ShowEslintResultCommand(sublime_plugin.WindowCommand):
     # show Eslint result
 
     def run(self):
@@ -253,4 +255,4 @@ class ResetConfigCommand(sublime_plugin.WindowCommand):
         file_path = folder + "config_file.txt"
         file = open(file_path, "w")
         file.flush()
-        TEMP_CONFIG_FILE =""
+        TEMP_CONFIG_FILE = ""
