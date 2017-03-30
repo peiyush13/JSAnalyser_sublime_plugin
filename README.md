@@ -8,7 +8,9 @@ Installation process
 1. Download all the dependencies
 
   --> npm install -g eslint
+  
   --> npm install -g eslint-plugin-angular
+  
   --> npm install -g eslint-config-angular
   
   if you are a windows user
