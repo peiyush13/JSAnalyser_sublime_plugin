@@ -53,7 +53,6 @@ class EslintCommand(sublime_plugin.WindowCommand):
 
         self.init_tests_panel()
 
-        print(GLOBAL_CONFIG_FILE)
 
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
 

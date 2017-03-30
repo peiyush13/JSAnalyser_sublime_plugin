@@ -1,4 +1,5 @@
 import os
+
 try:
     import thread
 except ImportError:
