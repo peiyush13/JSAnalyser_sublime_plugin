@@ -225,7 +225,13 @@ class ConfigCommand(sublime_plugin.WindowCommand):
         path = os.path.realpath(__file__).split("\\")
         path[len(path) - 1] = "";
         folder = "\\".join(path)
-        cmd = "java -jar " + "\"" + folder + "EslintEditor.jar" + "\""
+        if TEMP_CONFIG_FILE == "":
+            file= GLOBAL_CONFIG_FILE
+
+        else:
+            file= TEMP_CONFIG_FILE
+
+        cmd = "java -jar " + "\"" + folder + "EslintEditor.jar" +  "\""+" "+ file
         process = os.popen(cmd)
 
 
@@ -255,3 +261,8 @@ class ResetConfigCommand(sublime_plugin.WindowCommand):
         file = open(file_path, "w")
         file.flush()
         TEMP_CONFIG_FILE = ""
+
+
+class CreateRuleCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        self.window.open_file("C:\\Users\\piyush\\Desktop\\test cases js\\rules\\bmc-prefix-var.js")

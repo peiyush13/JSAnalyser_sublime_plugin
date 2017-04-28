@@ -1,7 +1,20 @@
 [
     {
         "keys": ["ctrl+j"],
-        "__doc__": "Run JSLint",
-        "command": "jslint"
-    }
+        "__doc__": "Run JSAnalyser",
+        "command": "eslint"
+    },
+    {
+         "keys": ["ctrl+r"],
+        "__doc__": "Create New Rule",
+        "command": "create_rule"
+    },
+    {
+         "keys": ["ctrl+q"],
+        "__doc__": "Configure Rules",
+        "command": "config"
+    },
+
+
+
 ]

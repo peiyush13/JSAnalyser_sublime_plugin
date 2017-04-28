@@ -27,6 +27,10 @@
                     {
                         "caption": "Reset to global configuration ",
                         "command": "reset_config"
+                    },
+                    {
+                        "caption": "Create Rule",
+                        "command": "create_rule"
                     }
                 ]
             }

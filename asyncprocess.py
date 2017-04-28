@@ -15,7 +15,6 @@ class AsyncProcess(object):
     def __init__(self, cmd, listener):
         self.cmd = cmd
         self.listener = listener
-        #print("DEBUG_EXEC: " + str(self.cmd))
         self.proc = subprocess.Popen(self.cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         try:

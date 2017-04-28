@@ -1,6 +1,8 @@
 {
     "plugins": ["angular"],
     "rules": {
+        "bmc-prefix": "warn",
+
         "space-before-blocks": "off",
         "valid-jsdoc": "off",
         "no-unreachable": "error",
@@ -39,7 +41,7 @@
         "class-methods-use-this": "off",
         "no-delete-var": "error",
         "angular/di": [
-            2,
+            0,
             "function"
         ],
         "angular/prefer-component": 0,

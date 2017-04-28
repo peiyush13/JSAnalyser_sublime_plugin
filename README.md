@@ -7,6 +7,9 @@ Installation process
 
 1. Download all the dependencies
 
+  open cmd or Powershell
+
+
   --> npm install -g eslint
   
   --> npm install -g eslint-plugin-angular
