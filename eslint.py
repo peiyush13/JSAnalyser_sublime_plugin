@@ -15,30 +15,30 @@ except ImportError:
     from .asyncprocess import *
 
 
+path = os.path.realpath(__file__).split("\\")
+path[len(path) - 1] = "";
+FOLDER = "\\".join(path)
+
+
 def getDefaultConf():
-    path = os.path.realpath(__file__).split("\\")
-    path[len(path) - 1] = "";
-    folder = "\\".join(path)
-    file_path = folder + "global.json"
+    file_path = FOLDER + "global.json"
     return "\"" + file_path + "\""
 
 
 def getTempConf():
-    path = os.path.realpath(__file__).split("\\")
-    path[len(path) - 1] = "";
-    folder = "\\".join(path)
-    file_path = folder + "config_file.txt"
+    file_path = FOLDER + "config_file.txt"
     file = open(file_path, "r")
-    return file.read()
+    file_path=file.read()
+    if not file_path:
+        return file_path
+    else:
+        return "\"" + file_path + "\""
 
 
 RESULT_VIEW_NAME = 'eslint_result_view'
 SETTINGS_FILE = "sublime-eslint.sublime-settings"
 GLOBAL_CONFIG_FILE = getDefaultConf()
 TEMP_CONFIG_FILE = getTempConf()
-path = os.path.realpath(__file__).split("\\")
-path[len(path) - 1] = "";
-FOLDER = "\\".join(path)
 
 
 class EslintCommand(sublime_plugin.WindowCommand):
@@ -60,11 +60,10 @@ class EslintCommand(sublime_plugin.WindowCommand):
 
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
 
-        if TEMP_CONFIG_FILE == "":
-            cmd += GLOBAL_CONFIG_FILE
-
-        else:
+        if TEMP_CONFIG_FILE:
             cmd += TEMP_CONFIG_FILE
+        else:
+            cmd += GLOBAL_CONFIG_FILE
 
         print(cmd)
         AsyncProcess(cmd, self)
@@ -242,16 +241,13 @@ class ConfigCommand(sublime_plugin.WindowCommand):
 
 class ImportConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
-        path = os.path.realpath(__file__).split("\\")
-        path[len(path) - 1] = "";
-        folder = "\\".join(path)
-        cmd = "python " + "\"" + folder + "fileselection.py" + "\""
+        cmd = "python " + "\"" + FOLDER + "fileselection.py" + "\""
         process = os.popen(cmd)
         result = process.read()
         result = result.encode('ascii', 'ignore').decode('ascii')
         result = re.split(r'\s{2,}', result)
         # TEMP_CONFIG_FILE = result[0]
-        file_path = folder + "config_file.txt"
+        file_path = FOLDER + "config_file.txt"
         file = open(file_path, "w")
         file.flush()
         file.write(result[0])
@@ -259,10 +255,7 @@ class ImportConfigCommand(sublime_plugin.WindowCommand):
 
 class ResetConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
-        path = os.path.realpath(__file__).split("\\")
-        path[len(path) - 1] = "";
-        folder = "\\".join(path)
-        file_path = folder + "config_file.txt"
+        file_path = FOLDER + "config_file.txt"
         file = open(file_path, "w")
         file.flush()
         TEMP_CONFIG_FILE = ""
@@ -284,8 +277,16 @@ class CreateRuleCommand(sublime_plugin.WindowCommand):
         self.window.open_file(os.path.join(result, test_file))
 
 
+class TestRuleCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        print("test rule called")
+
+
+
 class ImportRuleCommand(sublime_plugin.WindowCommand):
     def run(self):
         eslint_lib_path = "C:\\Program Files\\nodejs\\node_modules\\eslint\\lib\\rules"
         custom_rule_file = FOLDER + "\\" + "custom_rules" + "\\" + "bmc-prefix-var.js"
         copy2(custom_rule_file, eslint_lib_path)
+
+

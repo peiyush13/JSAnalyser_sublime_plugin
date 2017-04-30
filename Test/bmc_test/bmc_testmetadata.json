@@ -1,0 +1,7 @@
+{
+    "Desc": "bmc test file",
+    "Recommended": true,
+    "Fixable": false,
+    "Link": "http://www.google.com",
+    "Name": "bmc_test"
+}

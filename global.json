@@ -1,8 +1,6 @@
 {
     "plugins": ["angular"],
     "rules": {
-        "bmc-prefix": "warn",
-        "bmc-prefix-var": "warn",
 
         "space-before-blocks": "off",
         "valid-jsdoc": "off",

@@ -1,5 +1,7 @@
-import tkinter as tk
 
+import tkinter as tk
+import os
+import sys
 try:
     # for Python2
     from Tkinter import *   ## notice capitalized T in Tkinter
@@ -10,7 +12,17 @@ except ImportError:
 
 from tkinter import filedialog
 
+
+path = os.path.realpath(__file__).split("\\")
+path[len(path) - 1] = "";
+FOLDER = "\\".join(path)
+
+if sys.argv[0] is not "":
+    arg=os.path.join(sys.argv[0])
+else:
+    arg=FOLDER
+
 root = tk.Tk()
 root.withdraw()
-file_path = filedialog.askopenfilename()
-print(file_path)
+root.file_name = filedialog.askopenfilename(initialdir=FOLDER, title="Select file")
+print(root.file_name)
