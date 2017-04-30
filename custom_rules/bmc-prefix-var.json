@@ -1,0 +1,6 @@
+{
+    "rules": {
+        "bmc-prefix-var": "warn"
+	},
+	"env": {"browser": true}
+}

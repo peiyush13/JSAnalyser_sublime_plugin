@@ -1,0 +1,86 @@
+[
+    {
+        "Desc": "require or disallow initialization in variable declarations",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/init-declarations",
+        "Name": "init-declarations"
+    },
+    {
+        "Desc": "disallow catch clause parameters from shadowing variables in the outer scope",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-catch-shadow",
+        "Name": "no-catch-shadow"
+    },
+    {
+        "Desc": "disallow deleting variables",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-delete-var",
+        "Name": "no-delete-var"
+    },
+    {
+        "Desc": "disallow labels that share a name with a variable",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-label-var",
+        "Name": "no-label-var"
+    },
+    {
+        "Desc": "disallow specified global variables",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-restricted-globals",
+        "Name": "no-restricted-globals"
+    },
+    {
+        "Desc": "disallow variable declarations from shadowing variables declared in the outer scope",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-shadow",
+        "Name": "no-shadow"
+    },
+    {
+        "Desc": "disallow identifiers from shadowing restricted names",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-shadow-restricted-names",
+        "Name": "no-shadow-restricted-names"
+    },
+    {
+        "Desc": "disallow the use of undeclared variables unless mentioned in /*global */ comments",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-undef",
+        "Name": "no-undef"
+    },
+    {
+        "Desc": "disallow initializing variables to undefined",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-undef-init",
+        "Name": "no-undef-init"
+    },
+    {
+        "Desc": "disallow the use of undefined as an identifier",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-undefined",
+        "Name": "no-undefined"
+    },
+    {
+        "Desc": "disallow unused variables",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unused-vars",
+        "Name": "no-unused-vars"
+    },
+    {
+        "Desc": "disallow the use of variables before they are defined",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-use-before-define",
+        "Name": "no-use-before-define"
+    }
+]

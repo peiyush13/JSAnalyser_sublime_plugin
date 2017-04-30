@@ -1,0 +1,492 @@
+[
+    {
+        "Desc": "enforce getter and setter pairs in objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/accessor-pairs",
+        "Name": "accessor-pairs"
+    },
+    {
+        "Desc": "enforce return statements in callbacks of array methods",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/array-callback-return",
+        "Name": "array-callback-return"
+    },
+    {
+        "Desc": "enforce the use of variables within the scope they are defined",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/block-scoped-var",
+        "Name": "block-scoped-var"
+    },
+    {
+        "Desc": "enforce that class methods utilize this",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/class-methods-use-this",
+        "Name": "class-methods-use-this"
+    },
+    {
+        "Desc": "enforce a maximum cyclomatic complexity allowed in a program",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/complexity",
+        "Name": "complexity"
+    },
+    {
+        "Desc": "require return statements to either always or never specify values",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/consistent-return",
+        "Name": "consistent-return"
+    },
+    {
+        "Desc": "enforce consistent brace style for all control statements",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/curly",
+        "Name": "curly"
+    },
+    {
+        "Desc": "require default cases in switch statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/default-case",
+        "Name": "default-case"
+    },
+    {
+        "Desc": "enforce consistent newlines before and after dots",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/dot-location",
+        "Name": "dot-location"
+    },
+    {
+        "Desc": "enforce dot notation whenever possible",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/dot-notation",
+        "Name": "dot-notation"
+    },
+    {
+        "Desc": "require the use of === and !==",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/eqeqeq",
+        "Name": "eqeqeq"
+    },
+    {
+        "Desc": "require for-in loops to include an if statement",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/guard-for-in",
+        "Name": "guard-for-in"
+    },
+    {
+        "Desc": "disallow the use of alert, confirm, and prompt",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-alert",
+        "Name": "no-alert"
+    },
+    {
+        "Desc": "disallow the use of arguments.caller or arguments.callee",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-caller",
+        "Name": "no-caller"
+    },
+    {
+        "Desc": "disallow lexical declarations in case clauses",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-case-declarations",
+        "Name": "no-case-declarations"
+    },
+    {
+        "Desc": "disallow division operators explicitly at the beginning of regular expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-div-regex",
+        "Name": "no-div-regex"
+    },
+    {
+        "Desc": "disallow else blocks after return statements in if statements",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-else-return",
+        "Name": "no-else-return"
+    },
+    {
+        "Desc": "disallow empty functions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-empty-function",
+        "Name": "no-empty-function"
+    },
+    {
+        "Desc": "disallow empty destructuring patterns",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-empty-pattern",
+        "Name": "no-empty-pattern"
+    },
+    {
+        "Desc": "disallow null comparisons without type-checking operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-eq-null",
+        "Name": "no-eq-null"
+    },
+    {
+        "Desc": "disallow the use of eval()",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-eval",
+        "Name": "no-eval"
+    },
+    {
+        "Desc": "disallow extending native types",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-extend-native",
+        "Name": "no-extend-native"
+    },
+    {
+        "Desc": "disallow unnecessary calls to .bind()",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-extra-bind",
+        "Name": "no-extra-bind"
+    },
+    {
+        "Desc": "disallow unnecessary labels",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-extra-label",
+        "Name": "no-extra-label"
+    },
+    {
+        "Desc": "disallow fallthrough of case statements",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-fallthrough",
+        "Name": "no-fallthrough"
+    },
+    {
+        "Desc": "disallow leading or trailing decimal points in numeric literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-floating-decimal",
+        "Name": "no-floating-decimal"
+    },
+    {
+        "Desc": "disallow assignments to native objects or read-only global variables",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-global-assign",
+        "Name": "no-global-assign"
+    },
+    {
+        "Desc": "disallow shorthand type conversions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-implicit-coercion",
+        "Name": "no-implicit-coercion"
+    },
+    {
+        "Desc": "disallow variable and function declarations in the global scope",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-implicit-globals",
+        "Name": "no-implicit-globals"
+    },
+    {
+        "Desc": "disallow the use of eval()-like methods",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-implied-eval",
+        "Name": "no-implied-eval"
+    },
+    {
+        "Desc": "disallow this keywords outside of classes or class-like objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-invalid-this",
+        "Name": "no-invalid-this"
+    },
+    {
+        "Desc": "disallow the use of the __iterator__ property",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-iterator",
+        "Name": "no-iterator"
+    },
+    {
+        "Desc": "disallow labeled statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-labels",
+        "Name": "no-labels"
+    },
+    {
+        "Desc": "disallow unnecessary nested blocks",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-lone-blocks",
+        "Name": "no-lone-blocks"
+    },
+    {
+        "Desc": "disallow function declarations and expressions inside loop statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-loop-func",
+        "Name": "no-loop-func"
+    },
+    {
+        "Desc": "disallow magic numbers",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-magic-numbers",
+        "Name": "no-magic-numbers"
+    },
+    {
+        "Desc": "disallow multiple spaces",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-multi-spaces",
+        "Name": "no-multi-spaces"
+    },
+    {
+        "Desc": "disallow multiline strings",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-multi-str",
+        "Name": "no-multi-str"
+    },
+    {
+        "Desc": "disallow new operators outside of assignments or comparisons",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-new",
+        "Name": "no-new"
+    },
+    {
+        "Desc": "disallow new operators with the Function object",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-new-func",
+        "Name": "no-new-func"
+    },
+    {
+        "Desc": "disallow new operators with the String, Number, and Boolean objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-new-wrappers",
+        "Name": "no-new-wrappers"
+    },
+    {
+        "Desc": "disallow octal literals",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-octal",
+        "Name": "no-octal"
+    },
+    {
+        "Desc": "disallow octal escape sequences in string literals",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-octal-escape",
+        "Name": "no-octal-escape"
+    },
+    {
+        "Desc": "disallow reassigning function parameters",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-param-reassign",
+        "Name": "no-param-reassign"
+    },
+    {
+        "Desc": "disallow the use of the __proto__ property",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-proto",
+        "Name": "no-proto"
+    },
+    {
+        "Desc": "disallow variable redeclaration",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-redeclare",
+        "Name": "no-redeclare"
+    },
+    {
+        "Desc": "disallow certain properties on certain objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-restricted-properties",
+        "Name": "no-restricted-properties"
+    },
+    {
+        "Desc": "disallow assignment operators in return statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-return-assign",
+        "Name": "no-return-assign"
+    },
+    {
+        "Desc": "disallow unnecessary return await",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-return-await",
+        "Name": "no-return-await"
+    },
+    {
+        "Desc": "disallow javascript: urls",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-script-url",
+        "Name": "no-script-url"
+    },
+    {
+        "Desc": "disallow assignments where both sides are exactly the same",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-self-assign",
+        "Name": "no-self-assign"
+    },
+    {
+        "Desc": "disallow comparisons where both sides are exactly the same",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-self-compare",
+        "Name": "no-self-compare"
+    },
+    {
+        "Desc": "disallow comma operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-sequences",
+        "Name": "no-sequences"
+    },
+    {
+        "Desc": "disallow throwing literals as exceptions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-throw-literal",
+        "Name": "no-throw-literal"
+    },
+    {
+        "Desc": "disallow unmodified loop conditions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unmodified-loop-condition",
+        "Name": "no-unmodified-loop-condition"
+    },
+    {
+        "Desc": "disallow unused expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unused-expressions",
+        "Name": "no-unused-expressions"
+    },
+    {
+        "Desc": "disallow unused labels",
+        "Recommended": true,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-unused-labels",
+        "Name": "no-unused-labels"
+    },
+    {
+        "Desc": "disallow unnecessary calls to .call() and .apply()",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-useless-call",
+        "Name": "no-useless-call"
+    },
+    {
+        "Desc": "disallow unnecessary concatenation of literals or template literals",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-useless-concat",
+        "Name": "no-useless-concat"
+    },
+    {
+        "Desc": "disallow unnecessary escape characters",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-useless-escape",
+        "Name": "no-useless-escape"
+    },
+    {
+        "Desc": "disallow redundant return statements",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-useless-return",
+        "Name": "no-useless-return"
+    },
+    {
+        "Desc": "disallow void operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-void",
+        "Name": "no-void"
+    },
+    {
+        "Desc": "disallow specified warning terms in comments",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-warning-comments",
+        "Name": "no-warning-comments"
+    },
+    {
+        "Desc": "disallow with statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-with",
+        "Name": "no-with"
+    },
+    {
+        "Desc": "require using Error objects as Promise rejection reasons",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/prefer-promise-reject-errors",
+        "Name": "prefer-promise-reject-errors"
+    },
+    {
+        "Desc": "enforce the consistent use of the radix argument when using parseInt()",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/radix",
+        "Name": "radix"
+    },
+    {
+        "Desc": "disallow async functions which have no await expression",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/require-await",
+        "Name": "require-await"
+    },
+    {
+        "Desc": "require var declarations be placed at the top of their containing scope",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/vars-on-top",
+        "Name": "vars-on-top"
+    },
+    {
+        "Desc": "require parentheses around immediate function invocations",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/wrap-iife",
+        "Name": "wrap-iife"
+    },
+    {
+        "Desc": "require or disallow \u201cYoda\u201d conditions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/yoda",
+        "Name": "yoda"
+    }
+]

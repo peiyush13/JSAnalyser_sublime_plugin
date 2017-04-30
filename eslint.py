@@ -1,8 +1,9 @@
 import os
 import re
-import subprocess
+from subprocess import call
 import sublime
 import sublime_plugin
+from shutil import copy2
 
 try:
     from edit_buffer import *
@@ -19,7 +20,8 @@ def getDefaultConf():
     path[len(path) - 1] = "";
     folder = "\\".join(path)
     file_path = folder + "global.json"
-    return "\""+file_path+"\""
+    return "\"" + file_path + "\""
+
 
 def getTempConf():
     path = os.path.realpath(__file__).split("\\")
@@ -34,6 +36,9 @@ RESULT_VIEW_NAME = 'eslint_result_view'
 SETTINGS_FILE = "sublime-eslint.sublime-settings"
 GLOBAL_CONFIG_FILE = getDefaultConf()
 TEMP_CONFIG_FILE = getTempConf()
+path = os.path.realpath(__file__).split("\\")
+path[len(path) - 1] = "";
+FOLDER = "\\".join(path)
 
 
 class EslintCommand(sublime_plugin.WindowCommand):
@@ -52,7 +57,6 @@ class EslintCommand(sublime_plugin.WindowCommand):
         self.tests_panel_showed = False
 
         self.init_tests_panel()
-
 
         cmd = 'eslint ' + s.get('node_eslint_options', '') + ' "' + file_path + '"' + ' -c '
 
@@ -226,12 +230,13 @@ class ConfigCommand(sublime_plugin.WindowCommand):
         path[len(path) - 1] = "";
         folder = "\\".join(path)
         if TEMP_CONFIG_FILE == "":
-            file= GLOBAL_CONFIG_FILE
+            file = GLOBAL_CONFIG_FILE
 
         else:
-            file= TEMP_CONFIG_FILE
-
-        cmd = "java -jar " + "\"" + folder + "EslintEditor.jar" +  "\""+" "+ file
+            file = TEMP_CONFIG_FILE
+        cmd1 = "cd " + folder
+        cmd = cmd1 + "&&" + "java -jar " + "\"" + folder + "EslintEditor.jar" + "\"" + " " + file
+        print(cmd)
         process = os.popen(cmd)
 
 
@@ -264,5 +269,23 @@ class ResetConfigCommand(sublime_plugin.WindowCommand):
 
 
 class CreateRuleCommand(sublime_plugin.WindowCommand):
+
     def run(self):
-        self.window.open_file("C:\\Users\\piyush\\Desktop\\test cases js\\rules\\bmc-prefix-var.js")
+        cmd1 = "cd " + FOLDER
+        cmd = cmd1 + "&& " + "java -jar " + "\"" + FOLDER + "RuleImport.jar" + "\""
+        process = os.popen(cmd)
+        result = process.read()
+        result = result.encode('ascii', 'ignore').decode('ascii')
+        result_arr = result.split("\\")
+        file_name = result_arr[len(result_arr) - 1]
+        test_file=file_name+"test.js"
+
+        self.window.open_file(os.path.join(result, file_name+".js"))
+        self.window.open_file(os.path.join(result, test_file))
+
+
+class ImportRuleCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        eslint_lib_path = "C:\\Program Files\\nodejs\\node_modules\\eslint\\lib\\rules"
+        custom_rule_file = FOLDER + "\\" + "custom_rules" + "\\" + "bmc-prefix-var.js"
+        copy2(custom_rule_file, eslint_lib_path)

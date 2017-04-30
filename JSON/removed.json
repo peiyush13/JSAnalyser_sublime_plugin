@@ -1,0 +1,74 @@
+[
+  {
+    "Removed rule": "global-strict",
+    "Replaced by": "strict"
+  },
+  {
+    "Removed rule": "no-comma-dangle",
+    "Replaced by": "comma-dangle"
+  },
+  {
+    "Removed rule": "no-extra-strict",
+    "Replaced by": "strict"
+  },
+  {
+    "Removed rule": "space-in-brackets",
+    "Replaced by": "object-curly-spacingarray-bracket-spacing"
+  },
+  {
+    "Removed rule": "spaced-line-comment",
+    "Replaced by": "spaced-comment"
+  },
+  {
+    "Removed rule": "no-reserved-keys",
+    "Replaced by": "quote-props"
+  },
+  {
+    "Removed rule": "no-empty-class",
+    "Replaced by": "no-empty-character-class"
+  },
+  {
+    "Removed rule": "space-before-keywords",
+    "Replaced by": "keyword-spacing"
+  },
+  {
+    "Removed rule": "no-wrap-func",
+    "Replaced by": "no-extra-parens"
+  },
+  {
+    "Removed rule": "space-after-function-name",
+    "Replaced by": "space-before-function-paren"
+  },
+  {
+    "Removed rule": "generator-star",
+    "Replaced by": "generator-star-spacing"
+  },
+  {
+    "Removed rule": "no-space-before-semi",
+    "Replaced by": "semi-spacing"
+  },
+  {
+    "Removed rule": "no-empty-label",
+    "Replaced by": "no-labels"
+  },
+  {
+    "Removed rule": "space-after-keywords",
+    "Replaced by": "keyword-spacing"
+  },
+  {
+    "Removed rule": "no-arrow-condition",
+    "Replaced by": "no-confusing-arrowno-constant-condition"
+  },
+  {
+    "Removed rule": "space-return-throw-case",
+    "Replaced by": "keyword-spacing"
+  },
+  {
+    "Removed rule": "space-before-function-parentheses",
+    "Replaced by": "space-before-function-paren"
+  },
+  {
+    "Removed rule": "space-unary-word-ops",
+    "Replaced by": "space-unary-ops"
+  }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "Desc": "disallow await inside of loops",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-await-in-loop",
+        "Name": "no-await-in-loop"
+    },
+    {
+        "Desc": "disallow comparing against -0",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-compare-neg-zero",
+        "Name": "no-compare-neg-zero"
+    },
+    {
+        "Desc": "disallow assignment operators in conditional expressions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-cond-assign",
+        "Name": "no-cond-assign"
+    },
+    {
+        "Desc": "disallow the use of console",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-console",
+        "Name": "no-console"
+    },
+    {
+        "Desc": "disallow constant expressions in conditions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-constant-condition",
+        "Name": "no-constant-condition"
+    },
+    {
+        "Desc": "disallow control characters in regular expressions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-control-regex",
+        "Name": "no-control-regex"
+    },
+    {
+        "Desc": "disallow the use of debugger",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-debugger",
+        "Name": "no-debugger"
+    },
+    {
+        "Desc": "disallow duplicate arguments in function definitions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-dupe-args",
+        "Name": "no-dupe-args"
+    },
+    {
+        "Desc": "disallow duplicate keys in object literals",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-dupe-keys",
+        "Name": "no-dupe-keys"
+    },
+    {
+        "Desc": "disallow duplicate case labels",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-duplicate-case",
+        "Name": "no-duplicate-case"
+    },
+    {
+        "Desc": "disallow empty block statements",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-empty",
+        "Name": "no-empty"
+    },
+    {
+        "Desc": "disallow empty character classes in regular expressions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-empty-character-class",
+        "Name": "no-empty-character-class"
+    },
+    {
+        "Desc": "disallow reassigning exceptions in catch clauses",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-ex-assign",
+        "Name": "no-ex-assign"
+    },
+    {
+        "Desc": "disallow unnecessary boolean casts",
+        "Recommended": true,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-extra-boolean-cast",
+        "Name": "no-extra-boolean-cast"
+    },
+    {
+        "Desc": "disallow unnecessary parentheses",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-extra-parens",
+        "Name": "no-extra-parens"
+    },
+    {
+        "Desc": "disallow unnecessary semicolons",
+        "Recommended": true,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-extra-semi",
+        "Name": "no-extra-semi"
+    },
+    {
+        "Desc": "disallow reassigning function declarations",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-func-assign",
+        "Name": "no-func-assign"
+    },
+    {
+        "Desc": "disallow variable or function declarations in nested blocks",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-inner-declarations",
+        "Name": "no-inner-declarations"
+    },
+    {
+        "Desc": "disallow invalid regular expression strings in RegExp constructors",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-invalid-regexp",
+        "Name": "no-invalid-regexp"
+    },
+    {
+        "Desc": "disallow irregular whitespace outside of strings and comments",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-irregular-whitespace",
+        "Name": "no-irregular-whitespace"
+    },
+    {
+        "Desc": "disallow calling global object properties as functions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-obj-calls",
+        "Name": "no-obj-calls"
+    },
+    {
+        "Desc": "disallow calling some Object.prototype methods directly on objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-prototype-builtins",
+        "Name": "no-prototype-builtins"
+    },
+    {
+        "Desc": "disallow multiple spaces in regular expressions",
+        "Recommended": true,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-regex-spaces",
+        "Name": "no-regex-spaces"
+    },
+    {
+        "Desc": "disallow sparse arrays",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-sparse-arrays",
+        "Name": "no-sparse-arrays"
+    },
+    {
+        "Desc": "disallow template literal placeholder syntax in regular strings",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-template-curly-in-string",
+        "Name": "no-template-curly-in-string"
+    },
+    {
+        "Desc": "disallow confusing multiline expressions",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unexpected-multiline",
+        "Name": "no-unexpected-multiline"
+    },
+    {
+        "Desc": "disallow unreachable code after return, throw, continue, and break statements",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unreachable",
+        "Name": "no-unreachable"
+    },
+    {
+        "Desc": "disallow control flow statements in finally blocks",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-unsafe-finally",
+        "Name": "no-unsafe-finally"
+    },
+    {
+        "Desc": "disallow negating the left operand of relational operators",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-unsafe-negation",
+        "Name": "no-unsafe-negation"
+    },
+    {
+        "Desc": "require calls to isNaN() when checking for NaN",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/use-isnan",
+        "Name": "use-isnan"
+    },
+    {
+        "Desc": "enforce valid JSDoc comments",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/valid-jsdoc",
+        "Name": "valid-jsdoc"
+    },
+    {
+        "Desc": "enforce comparing typeof expressions against valid strings",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/valid-typeof",
+        "Name": "valid-typeof"
+    }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "RuleName": "callback-return",
+    "Details": "require return statements after callbacks"
+  },
+  {
+    "RuleName": "no-process-env",
+    "Details": "disallow the use of process.env"
+  },
+  {
+    "RuleName": "no-mixed-requires",
+    "Details": "disallow require calls to be mixed with regular variable declarations"
+  },
+  {
+    "RuleName": "no-sync",
+    "Details": "disallow synchronous methods"
+  },
+  {
+    "RuleName": "handle-callback-err",
+    "Details": "require error handling in callbacks"
+  },
+  {
+    "RuleName": "no-restricted-modules",
+    "Details": "disallow specified modules when loaded by require"
+  },
+  {
+    "RuleName": "no-path-concat",
+    "Details": "disallow string concatenation with __dirname and __filename"
+  },
+  {
+    "RuleName": "global-require",
+    "Details": "require require() calls to be placed at top-level module scope"
+  },
+  {
+    "RuleName": "no-new-require",
+    "Details": "disallow new operators with calls to require"
+  },
+  {
+    "RuleName": "no-process-exit",
+    "Details": "disallow the use of process.exit()"
+  }
+]

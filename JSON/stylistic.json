@@ -1,0 +1,590 @@
+[
+    {
+        "Desc": "enforce consistent spacing inside array brackets",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/array-bracket-spacing",
+        "Name": "array-bracket-spacing"
+    },
+    {
+        "Desc": "enforce consistent spacing inside single-line blocks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/block-spacing",
+        "Name": "block-spacing"
+    },
+    {
+        "Desc": "enforce consistent brace style for blocks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/brace-style",
+        "Name": "brace-style"
+    },
+    {
+        "Desc": "enforce camelcase naming convention",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/camelcase",
+        "Name": "camelcase"
+    },
+    {
+        "Desc": "enforce or disallow capitalization of the first letter of a comment",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/capitalized-comments",
+        "Name": "capitalized-comments"
+    },
+    {
+        "Desc": "require or disallow trailing commas",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/comma-dangle",
+        "Name": "comma-dangle"
+    },
+    {
+        "Desc": "enforce consistent spacing before and after commas",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/comma-spacing",
+        "Name": "comma-spacing"
+    },
+    {
+        "Desc": "enforce consistent comma style",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/comma-style",
+        "Name": "comma-style"
+    },
+    {
+        "Desc": "enforce consistent spacing inside computed property brackets",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/computed-property-spacing",
+        "Name": "computed-property-spacing"
+    },
+    {
+        "Desc": "enforce consistent naming when capturing the current execution context",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/consistent-this",
+        "Name": "consistent-this"
+    },
+    {
+        "Desc": "require or disallow newline at the end of files",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/eol-last",
+        "Name": "eol-last"
+    },
+    {
+        "Desc": "require or disallow spacing between function identifiers and their invocations",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/func-call-spacing",
+        "Name": "func-call-spacing"
+    },
+    {
+        "Desc": "require function names to match the name of the variable or property to which they are assigned",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/func-name-matching",
+        "Name": "func-name-matching"
+    },
+    {
+        "Desc": "require or disallow named function expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/func-names",
+        "Name": "func-names"
+    },
+    {
+        "Desc": "enforce the consistent use of either function declarations or expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/func-style",
+        "Name": "func-style"
+    },
+    {
+        "Desc": "disallow specified identifiers",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/id-blacklist",
+        "Name": "id-blacklist"
+    },
+    {
+        "Desc": "enforce minimum and maximum identifier lengths",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/id-length",
+        "Name": "id-length"
+    },
+    {
+        "Desc": "require identifiers to match a specified regular expression",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/id-match",
+        "Name": "id-match"
+    },
+    {
+        "Desc": "enforce consistent indentation",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/indent",
+        "Name": "indent"
+    },
+    {
+        "Desc": "enforce the consistent use of either double or single quotes in JSX attributes",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/jsx-quotes",
+        "Name": "jsx-quotes"
+    },
+    {
+        "Desc": "enforce consistent spacing between keys and values in object literal properties",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/key-spacing",
+        "Name": "key-spacing"
+    },
+    {
+        "Desc": "enforce consistent spacing before and after keywords",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/keyword-spacing",
+        "Name": "keyword-spacing"
+    },
+    {
+        "Desc": "enforce position of line comments",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/line-comment-position",
+        "Name": "line-comment-position"
+    },
+    {
+        "Desc": "enforce consistent linebreak style",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/linebreak-style",
+        "Name": "linebreak-style"
+    },
+    {
+        "Desc": "require empty lines around comments",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/lines-around-comment",
+        "Name": "lines-around-comment"
+    },
+    {
+        "Desc": "require or disallow newlines around directives",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/lines-around-directive",
+        "Name": "lines-around-directive"
+    },
+    {
+        "Desc": "enforce a maximum depth that blocks can be nested",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-depth",
+        "Name": "max-depth"
+    },
+    {
+        "Desc": "enforce a maximum line length",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-len",
+        "Name": "max-len"
+    },
+    {
+        "Desc": "enforce a maximum number of lines per file",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-lines",
+        "Name": "max-lines"
+    },
+    {
+        "Desc": "enforce a maximum depth that callbacks can be nested",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-nested-callbacks",
+        "Name": "max-nested-callbacks"
+    },
+    {
+        "Desc": "enforce a maximum number of parameters in function definitions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-params",
+        "Name": "max-params"
+    },
+    {
+        "Desc": "enforce a maximum number of statements allowed in function blocks",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-statements",
+        "Name": "max-statements"
+    },
+    {
+        "Desc": "enforce a maximum number of statements allowed per line",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/max-statements-per-line",
+        "Name": "max-statements-per-line"
+    },
+    {
+        "Desc": "enforce newlines between operands of ternary expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/multiline-ternary",
+        "Name": "multiline-ternary"
+    },
+    {
+        "Desc": "require constructor names to begin with a capital letter",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/new-cap",
+        "Name": "new-cap"
+    },
+    {
+        "Desc": "require parentheses when invoking a constructor with no arguments",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/new-parens",
+        "Name": "new-parens"
+    },
+    {
+        "Desc": "require or disallow an empty line after variable declarations",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/newline-after-var",
+        "Name": "newline-after-var"
+    },
+    {
+        "Desc": "require an empty line before return statements",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/newline-before-return",
+        "Name": "newline-before-return"
+    },
+    {
+        "Desc": "require a newline after each call in a method chain",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/newline-per-chained-call",
+        "Name": "newline-per-chained-call"
+    },
+    {
+        "Desc": "disallow Array constructors",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-array-constructor",
+        "Name": "no-array-constructor"
+    },
+    {
+        "Desc": "disallow bitwise operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-bitwise",
+        "Name": "no-bitwise"
+    },
+    {
+        "Desc": "disallow continue statements",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-continue",
+        "Name": "no-continue"
+    },
+    {
+        "Desc": "disallow inline comments after code",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-inline-comments",
+        "Name": "no-inline-comments"
+    },
+    {
+        "Desc": "disallow if statements as the only statement in else blocks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-lonely-if",
+        "Name": "no-lonely-if"
+    },
+    {
+        "Desc": "disallow mixed binary operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-mixed-operators",
+        "Name": "no-mixed-operators"
+    },
+    {
+        "Desc": "disallow mixed spaces and tabs for indentation",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-mixed-spaces-and-tabs",
+        "Name": "no-mixed-spaces-and-tabs"
+    },
+    {
+        "Desc": "disallow use of chained assignment expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-multi-assign",
+        "Name": "no-multi-assign"
+    },
+    {
+        "Desc": "disallow multiple empty lines",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-multiple-empty-lines",
+        "Name": "no-multiple-empty-lines"
+    },
+    {
+        "Desc": "disallow negated conditions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-negated-condition",
+        "Name": "no-negated-condition"
+    },
+    {
+        "Desc": "disallow nested ternary expressions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-nested-ternary",
+        "Name": "no-nested-ternary"
+    },
+    {
+        "Desc": "disallow Object constructors",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-new-object",
+        "Name": "no-new-object"
+    },
+    {
+        "Desc": "disallow the unary operators ++ and --",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-plusplus",
+        "Name": "no-plusplus"
+    },
+    {
+        "Desc": "disallow specified syntax",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-restricted-syntax",
+        "Name": "no-restricted-syntax"
+    },
+    {
+        "Desc": "disallow all tabs",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-tabs",
+        "Name": "no-tabs"
+    },
+    {
+        "Desc": "disallow ternary operators",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-ternary",
+        "Name": "no-ternary"
+    },
+    {
+        "Desc": "disallow trailing whitespace at the end of lines",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-trailing-spaces",
+        "Name": "no-trailing-spaces"
+    },
+    {
+        "Desc": "disallow dangling underscores in identifiers",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-underscore-dangle",
+        "Name": "no-underscore-dangle"
+    },
+    {
+        "Desc": "disallow ternary operators when simpler alternatives exist",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-unneeded-ternary",
+        "Name": "no-unneeded-ternary"
+    },
+    {
+        "Desc": "disallow whitespace before properties",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-whitespace-before-property",
+        "Name": "no-whitespace-before-property"
+    },
+    {
+        "Desc": "enforce the location of single-line statements",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/nonblock-statement-body-position",
+        "Name": "nonblock-statement-body-position"
+    },
+    {
+        "Desc": "enforce consistent line breaks inside braces",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/object-curly-newline",
+        "Name": "object-curly-newline"
+    },
+    {
+        "Desc": "enforce consistent spacing inside braces",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/object-curly-spacing",
+        "Name": "object-curly-spacing"
+    },
+    {
+        "Desc": "enforce placing object properties on separate lines",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/object-property-newline",
+        "Name": "object-property-newline"
+    },
+    {
+        "Desc": "enforce variables to be declared either together or separately in functions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/one-var",
+        "Name": "one-var"
+    },
+    {
+        "Desc": "require or disallow newlines around variable declarations",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/one-var-declaration-per-line",
+        "Name": "one-var-declaration-per-line"
+    },
+    {
+        "Desc": "require or disallow assignment operator shorthand where possible",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/operator-assignment",
+        "Name": "operator-assignment"
+    },
+    {
+        "Desc": "enforce consistent linebreak style for operators",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/operator-linebreak",
+        "Name": "operator-linebreak"
+    },
+    {
+        "Desc": "require or disallow padding within blocks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/padded-blocks",
+        "Name": "padded-blocks"
+    },
+    {
+        "Desc": "require quotes around object literal property names",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/quote-props",
+        "Name": "quote-props"
+    },
+    {
+        "Desc": "enforce the consistent use of either backticks, double, or single quotes",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/quotes",
+        "Name": "quotes"
+    },
+    {
+        "Desc": "require JSDoc comments",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/require-jsdoc",
+        "Name": "require-jsdoc"
+    },
+    {
+        "Desc": "require or disallow semicolons instead of ASI",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/semi",
+        "Name": "semi"
+    },
+    {
+        "Desc": "enforce consistent spacing before and after semicolons",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/semi-spacing",
+        "Name": "semi-spacing"
+    },
+    {
+        "Desc": "require object keys to be sorted",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/sort-keys",
+        "Name": "sort-keys"
+    },
+    {
+        "Desc": "require variables within the same declaration block to be sorted",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/sort-vars",
+        "Name": "sort-vars"
+    },
+    {
+        "Desc": "enforce consistent spacing before blocks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/space-before-blocks",
+        "Name": "space-before-blocks"
+    },
+    {
+        "Desc": "enforce consistent spacing before function definition opening parenthesis",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/space-before-function-paren",
+        "Name": "space-before-function-paren"
+    },
+    {
+        "Desc": "enforce consistent spacing inside parentheses",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/space-in-parens",
+        "Name": "space-in-parens"
+    },
+    {
+        "Desc": "require spacing around infix operators",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/space-infix-ops",
+        "Name": "space-infix-ops"
+    },
+    {
+        "Desc": "enforce consistent spacing before or after unary operators",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/space-unary-ops",
+        "Name": "space-unary-ops"
+    },
+    {
+        "Desc": "enforce consistent spacing after the // or /* in a comment",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/spaced-comment",
+        "Name": "spaced-comment"
+    },
+    {
+        "Desc": "require or disallow spacing between template tags and their literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/template-tag-spacing",
+        "Name": "template-tag-spacing"
+    },
+    {
+        "Desc": "require or disallow Unicode byte order mark (BOM)",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/unicode-bom",
+        "Name": "unicode-bom"
+    },
+    {
+        "Desc": "require parenthesis around regex literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/wrap-regex",
+        "Name": "wrap-regex"
+    }
+]

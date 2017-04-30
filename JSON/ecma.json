@@ -1,0 +1,219 @@
+[
+    {
+        "Desc": "require braces around arrow function bodies",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/arrow-body-style",
+        "Name": "arrow-body-style"
+    },
+    {
+        "Desc": "require parentheses around arrow function arguments",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/arrow-parens",
+        "Name": "arrow-parens"
+    },
+    {
+        "Desc": "enforce consistent spacing before and after the arrow in arrow functions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/arrow-spacing",
+        "Name": "arrow-spacing"
+    },
+    {
+        "Desc": "require super() calls in constructors",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/constructor-super",
+        "Name": "constructor-super"
+    },
+    {
+        "Desc": "enforce consistent spacing around * operators in generator functions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/generator-star-spacing",
+        "Name": "generator-star-spacing"
+    },
+    {
+        "Desc": "disallow reassigning class members",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-class-assign",
+        "Name": "no-class-assign"
+    },
+    {
+        "Desc": "disallow arrow functions where they could be confused with comparisons",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-confusing-arrow",
+        "Name": "no-confusing-arrow"
+    },
+    {
+        "Desc": "disallow reassigning const variables",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-const-assign",
+        "Name": "no-const-assign"
+    },
+    {
+        "Desc": "disallow duplicate class members",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-dupe-class-members",
+        "Name": "no-dupe-class-members"
+    },
+    {
+        "Desc": "disallow duplicate module imports",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-duplicate-imports",
+        "Name": "no-duplicate-imports"
+    },
+    {
+        "Desc": "disallow new operators with the Symbol object",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-new-symbol",
+        "Name": "no-new-symbol"
+    },
+    {
+        "Desc": "disallow specified modules when loaded by import",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-restricted-imports",
+        "Name": "no-restricted-imports"
+    },
+    {
+        "Desc": "disallow this/super before calling super() in constructors",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-this-before-super",
+        "Name": "no-this-before-super"
+    },
+    {
+        "Desc": "disallow unnecessary computed property keys in object literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-useless-computed-key",
+        "Name": "no-useless-computed-key"
+    },
+    {
+        "Desc": "disallow unnecessary constructors",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/no-useless-constructor",
+        "Name": "no-useless-constructor"
+    },
+    {
+        "Desc": "disallow renaming import, export, and destructured assignments to the same name",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-useless-rename",
+        "Name": "no-useless-rename"
+    },
+    {
+        "Desc": "require let or const instead of var",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/no-var",
+        "Name": "no-var"
+    },
+    {
+        "Desc": "require or disallow method and property shorthand syntax for object literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/object-shorthand",
+        "Name": "object-shorthand"
+    },
+    {
+        "Desc": "require arrow functions as callbacks",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/prefer-arrow-callback",
+        "Name": "prefer-arrow-callback"
+    },
+    {
+        "Desc": "require const declarations for variables that are never reassigned after declared",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/prefer-const",
+        "Name": "prefer-const"
+    },
+    {
+        "Desc": "require destructuring from arrays and/or objects",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/prefer-destructuring",
+        "Name": "prefer-destructuring"
+    },
+    {
+        "Desc": "disallow parseInt() in favor of binary, octal, and hexadecimal literals",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/prefer-numeric-literals",
+        "Name": "prefer-numeric-literals"
+    },
+    {
+        "Desc": "require rest parameters instead of arguments",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/prefer-rest-params",
+        "Name": "prefer-rest-params"
+    },
+    {
+        "Desc": "require spread operators instead of .apply()",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/prefer-spread",
+        "Name": "prefer-spread"
+    },
+    {
+        "Desc": "require template literals instead of string concatenation",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/prefer-template",
+        "Name": "prefer-template"
+    },
+    {
+        "Desc": "require generator functions to contain yield",
+        "Recommended": true,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/require-yield",
+        "Name": "require-yield"
+    },
+    {
+        "Desc": "enforce spacing between rest and spread operators and their expressions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/rest-spread-spacing",
+        "Name": "rest-spread-spacing"
+    },
+    {
+        "Desc": "enforce sorted import declarations within modules",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/sort-imports",
+        "Name": "sort-imports"
+    },
+    {
+        "Desc": "require symbol descriptions",
+        "Recommended": false,
+        "Fixable": false,
+        "Link": "http://eslint.org/docs/rules/symbol-description",
+        "Name": "symbol-description"
+    },
+    {
+        "Desc": "require or disallow spacing around embedded expressions of template strings",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/template-curly-spacing",
+        "Name": "template-curly-spacing"
+    },
+    {
+        "Desc": "require or disallow spacing around the * in yield* expressions",
+        "Recommended": false,
+        "Fixable": true,
+        "Link": "http://eslint.org/docs/rules/yield-star-spacing",
+        "Name": "yield-star-spacing"
+    }
+]

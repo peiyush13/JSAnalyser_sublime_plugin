@@ -1,0 +1,375 @@
+[
+    {
+        "Desc": " - disallow to reference modules with variables and require to use the getter syntax instead  ()angular.module('myModule')y022",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/module-getter.md",
+        "Name": "module-getter"
+    },
+    {
+        "Desc": " - disallow to assign modules to variables (linked to  ()module-gettery021",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/module-setter.md",
+        "Name": "module-setter"
+    },
+    {
+        "Desc": " - disallow use of internal angular properties prefixed with $$",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-private-call.md",
+        "Name": "no-private-call"
+    },
+    {
+        "Desc": " - limit the number of angular components per file ()y001",
+        "Value": [
+            0,
+            1
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/component-limit.md",
+        "Name": "component-limit"
+    },
+    {
+        "Desc": " - require the use of controllerAs in routes or states ()y031",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/controller-as-route.md",
+        "Name": "controller-as-route"
+    },
+    {
+        "Desc": " - require and specify a capture variable for  in controllers ()thisy032",
+        "Value": [
+            2,
+            "vm"
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/controller-as-vm.md",
+        "Name": "controller-as-vm"
+    },
+    {
+        "Desc": " - disallow assignments to  in controllers ()$scopey031",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/controller-as.md",
+        "Name": "controller-as"
+    },
+    {
+        "Desc": " - use  instead of $q(function(resolve, reject){})$q.deferred",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/deferred.md",
+        "Name": "deferred"
+    },
+    {
+        "Desc": " - disallow unused DI parameters",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/di-unused.md",
+        "Name": "di-unused"
+    },
+    {
+        "Desc": " - disallow any other directive restrict than 'A' or 'E' ()y074",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/directive-restrict.md",
+        "Name": "directive-restrict"
+    },
+    {
+        "Desc": " - disallow empty controllers",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/empty-controller.md",
+        "Name": "empty-controller"
+    },
+    {
+        "Desc": " - disallow use of controllers (according to the component first pattern)",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-controller.md",
+        "Name": "no-controller"
+    },
+    {
+        "Desc": " - disallow the use of inline templates",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-inline-template.md",
+        "Name": "no-inline-template"
+    },
+    {
+        "Desc": " - keep run functions clean and simple ()y171",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-run-logic.md",
+        "Name": "no-run-logic"
+    },
+    {
+        "Desc": " - disallow DI of specified services for other angular components ( for controllers, filters and directives)$http",
+        "Value": [
+            2,
+            [
+                "$http",
+                "$resource",
+                "Restangular"
+            ]
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-services.md",
+        "Name": "no-services"
+    },
+    {
+        "Desc": " - require  and  deregistration callbacks to be saved in a variable$on$watch",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/on-watch.md",
+        "Name": "on-watch"
+    },
+    {
+        "Desc": " -",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/prefer-component.md",
+        "Name": "prefer-component"
+    },
+    {
+        "Desc": " - use  instead of $cookies$cookieStore",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-cookiestore.md",
+        "Name": "no-cookiestore"
+    },
+    {
+        "Desc": " - disallow the deprecated directive replace property",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-directive-replace.md",
+        "Name": "no-directive-replace"
+    },
+    {
+        "Desc": " - disallow the  methods  and $httpsuccess()error()",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-http-callback.md",
+        "Name": "no-http-callback"
+    },
+    {
+        "Desc": " - require and specify a prefix for all component names",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/component-name.md",
+        "Name": "component-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all constant names ()y125",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/constant-name.md",
+        "Name": "constant-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all controller names (, )y123y124",
+        "Value": [
+            2,
+            "/[A-Z].*Controller$/"
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/controller-name.md",
+        "Name": "controller-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all directive names (, )y073y126",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/directive-name.md",
+        "Name": "directive-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all factory names ()y125",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/factory-name.md",
+        "Name": "factory-name"
+    },
+    {
+        "Desc": " - require and specify a consistent component name pattern (, )y120y121",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/file-name.md",
+        "Name": "file-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all filter names",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/filter-name.md",
+        "Name": "filter-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all module names ()y127",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/module-name.md",
+        "Name": "module-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all provider names ()y125",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/provider-name.md",
+        "Name": "provider-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all service names ()y125",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/service-name.md",
+        "Name": "service-name"
+    },
+    {
+        "Desc": " - require and specify a prefix for all value names ()y125",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/value-name.md",
+        "Name": "value-name"
+    },
+    {
+        "Desc": " - require DI parameters to be sorted alphabetically",
+        "Value": [
+            0,
+            true
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/di-order.md",
+        "Name": "di-order"
+    },
+    {
+        "Desc": " - require a consistent DI syntax",
+        "Value": [
+            2,
+            "function"
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/di.md",
+        "Name": "di"
+    },
+    {
+        "Desc": " - unittest  functions should only consist of assignments from injected values to describe block variablesinject",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/dumb-inject.md",
+        "Name": "dumb-inject"
+    },
+    {
+        "Desc": " - require and specify a consistent function style for components ('named' or 'anonymous') ()y024",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/function-type.md",
+        "Name": "function-type"
+    },
+    {
+        "Desc": " - require a consistent order of module dependencies",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/module-dependency-order.md",
+        "Name": "module-dependency-order"
+    },
+    {
+        "Desc": " - use  instead of  ()factory()service()y040",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-service-method.md",
+        "Name": "no-service-method"
+    },
+    {
+        "Desc": " - require all DI parameters to be located in their own line",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/one-dependency-per-line.md",
+        "Name": "one-dependency-per-line"
+    },
+    {
+        "Desc": " - disallow different rest service and specify one of '$http', '$resource', 'Restangular'",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/rest-service.md",
+        "Name": "rest-service"
+    },
+    {
+        "Desc": " - require and specify consistent use  or $scope.digest()$scope.apply()",
+        "Value": [
+            0,
+            "$digest"
+        ],
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/watchers-execution.md",
+        "Name": "watchers-execution"
+    },
+    {
+        "Desc": " - use  instead of  or angular.element$jQuery",
+        "Value": 1,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/angularelement.md",
+        "Name": "angularelement"
+    },
+    {
+        "Desc": " - use  and  instead of other undefined checksangular.isDefinedangular.isUndefined",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/definedundefined.md",
+        "Name": "definedundefined"
+    },
+    {
+        "Desc": " - use  instead of  ()$documentdocumenty180",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/document-service.md",
+        "Name": "document-service"
+    },
+    {
+        "Desc": " - use  instead of native angular.forEachArray.prototype.forEach",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/foreach.md",
+        "Name": "foreach"
+    },
+    {
+        "Desc": " - use  instead of  ()$intervalsetIntervaly181",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/interval-service.md",
+        "Name": "interval-service"
+    },
+    {
+        "Desc": " - use  and 'angular.toJson' instead of  and angular.fromJsonJSON.parseJSON.stringify",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/json-functions.md",
+        "Name": "json-functions"
+    },
+    {
+        "Desc": " - use the  service instead of the  methods$logconsole",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/log.md",
+        "Name": "log"
+    },
+    {
+        "Desc": " - require to use  methods directlyangular.mock",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-angular-mock.md",
+        "Name": "no-angular-mock"
+    },
+    {
+        "Desc": " - disallow to wrap  objects with  or angular.elementjQuery$",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/no-jquery-angularelement.md",
+        "Name": "no-jquery-angularelement"
+    },
+    {
+        "Desc": " - use  instead of  ()$timeoutsetTimeouty181",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/timeout-service.md",
+        "Name": "timeout-service"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isArraytypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-array.md",
+        "Name": "typecheck-array"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isDatetypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-date.md",
+        "Name": "typecheck-date"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isFunctiontypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-function.md",
+        "Name": "typecheck-function"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isNumbertypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-number.md",
+        "Name": "typecheck-number"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isObjecttypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-object.md",
+        "Name": "typecheck-object"
+    },
+    {
+        "Desc": " - use  instead of  comparisonsangular.isStringtypeof",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/typecheck-string.md",
+        "Name": "typecheck-string"
+    },
+    {
+        "Desc": " - use  instead of  ()$windowwindowy180",
+        "Value": 2,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/window-service.md",
+        "Name": "window-service"
+    },
+    {
+        "Desc": " - Check for common misspelling $on('destroy', ...).",
+        "Value": 0,
+        "Link": "https://github.com/Gillespie59/eslint-plugin-angularjs/blob/master/docs/on-destroy.md",
+        "Name": "on-destroy"
+    }
+]

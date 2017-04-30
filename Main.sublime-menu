@@ -31,6 +31,10 @@
                     {
                         "caption": "Create Rule",
                         "command": "create_rule"
+                    },
+                    {
+                        "caption": "Import Rule",
+                        "command": "import_rule"
                     }
                 ]
             }
