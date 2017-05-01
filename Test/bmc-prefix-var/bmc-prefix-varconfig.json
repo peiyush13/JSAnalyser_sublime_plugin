@@ -1,0 +1,4 @@
+{
+    "rules": {"bmc-prefix-var": "error"},
+    "env": {"browser": true}
+}

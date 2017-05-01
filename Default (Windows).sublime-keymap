@@ -14,7 +14,20 @@
         "__doc__": "Configure Rules",
         "command": "config"
     },
-
-
+    {
+         "keys": ["ctrl+shift+t"],
+        "__doc__": "Select and Test Rules",
+        "command": "import_and_test_rule"
+    },
+    {
+         "keys": ["ctrl+i"],
+        "__doc__": "Import Rules",
+        "command": "import_rule"
+    },
+    {
+         "keys": ["ctrl+t"],
+        "__doc__": "Test Rules",
+        "command": "test_rule"
+    }
 
 ]

@@ -12,10 +12,7 @@
                         "caption": "Run JSAnalyser",
                         "command": "eslint"
                     },
-                    {
-                        "caption": "Show JSAnalyser Result",
-                        "command": "show_eslint_result"
-                    },
+
                     {
                         "caption": "Configure Rules",
                         "command": "config"
@@ -31,6 +28,14 @@
                     {
                         "caption": "Create Rule",
                         "command": "create_rule"
+                    },
+                    {
+                        "caption": "Select and test Rule",
+                        "command": "import_and_test_rule"
+                    },
+                    {
+                        "caption": "Test Rule",
+                        "command": "test_rule"
                     },
                     {
                         "caption": "Import Rule",

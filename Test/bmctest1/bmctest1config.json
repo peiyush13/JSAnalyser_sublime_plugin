@@ -1,0 +1,4 @@
+{
+    "rules": {"bmctest1": "error"},
+    "env": {"browser": true}
+}

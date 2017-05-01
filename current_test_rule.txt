@@ -1,0 +1,1 @@
+C:\Users\piyush\AppData\Roaming\Sublime Text 3\Packages\sublime-eslint\Test\bmc-prefix-var\bmc-prefix-varconfig.json

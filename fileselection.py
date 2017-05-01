@@ -1,28 +1,31 @@
-
-import tkinter as tk
 import os
 import sys
+import tkinter as tk
+
 try:
     # for Python2
-    from Tkinter import *   ## notice capitalized T in Tkinter
+    from Tkinter import *  ## notice capitalized T in Tkinter
 except ImportError:
     # for Python3
-    from tkinter import *   ## notice lowercase 't' in tkinter here
-
+    from tkinter import *  ## notice lowercase 't' in tkinter here
 
 from tkinter import filedialog
-
 
 path = os.path.realpath(__file__).split("\\")
 path[len(path) - 1] = "";
 FOLDER = "\\".join(path)
-
-if sys.argv[0] is not "":
-    arg=os.path.join(sys.argv[0])
-else:
-    arg=FOLDER
-
 root = tk.Tk()
 root.withdraw()
-root.file_name = filedialog.askopenfilename(initialdir=FOLDER, title="Select file")
+
+if len(sys.argv) == 2:
+    arg = os.path.join(FOLDER, sys.argv[1])
+    root.file_name = filedialog.askopenfilename(initialdir=arg, title="Select file",filetypes=[("JSON Files", "*.json")])
+elif len(sys.argv) > 2:
+    arg = os.path.join(FOLDER, sys.argv[1])
+    root.file_name = filedialog.askopenfilename(initialdir=arg, title="Select file",filetypes=[("JS Files", "*.js")])
+else:
+    arg=FOLDER
+    root.file_name = filedialog.askopenfilename(initialdir=arg, title="Select file",filetypes=[("JSON Files", "*.json")])
+
+
 print(root.file_name)
