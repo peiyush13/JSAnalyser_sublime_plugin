@@ -1,0 +1,1 @@
+C:\Users\piyush\AppData\Roaming\Sublime Text 3\Packages\sublime-eslint\global.json

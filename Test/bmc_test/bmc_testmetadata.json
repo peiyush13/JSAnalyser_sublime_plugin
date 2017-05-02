@@ -1,7 +1,0 @@
-{
-    "Desc": "simple BMC test",
-    "Recommended": true,
-    "Fixable": false,
-    "Link": "http://www.google.com",
-    "Name": "bmc_test"
-}

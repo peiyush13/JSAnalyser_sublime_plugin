@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cacb7c3-ef30-428f-9da7-74a73138fd8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/current_test_rule.txt" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmc_test/bmc_test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmc_test/bmc_testconfig.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmc_test/bmc_testmetadata.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmc_test/bmc_testtest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom_rules/bmc-prefix-var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom_rules/bmc-prefix-var.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EslintEditor.jar" afterPath="$PROJECT_DIR$/EslintEditor.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmctest1/bmctest1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmctest1/bmctest1config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmctest1/bmctest1metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bmctest1/bmctest1test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/cmd/cmd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/cmd/cmdconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/cmd/cmdmetadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/cmd/cmdtest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fileselection.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Default (Windows).sublime-keymap" afterPath="$PROJECT_DIR$/Default (Windows).sublime-keymap" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSON/customrules.json" afterPath="$PROJECT_DIR$/JSON/customrules.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.sublime-menu" afterPath="$PROJECT_DIR$/Main.sublime-menu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_file.txt" afterPath="$PROJECT_DIR$/config_file.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eslint.py" afterPath="$PROJECT_DIR$/eslint.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileselection.py" afterPath="$PROJECT_DIR$/fileselection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/global.json" afterPath="$PROJECT_DIR$/global.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +37,18 @@
       <file leaf-file-name="Main.sublime-menu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/global.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="214" column="36" lean-forward="true" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -44,44 +57,51 @@
       <file leaf-file-name="CustomRules.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JSON/CustomRules.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON/variables.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eslint.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eslint.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eslint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="383" column="0" lean-forward="true" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#159#247#0" expanded="false" />
-                <element signature="e#4249#6449#0" expanded="false" />
-                <element signature="e#6517#6644#0" expanded="false" />
-                <element signature="e#10999#13079#0" expanded="false" />
+                <element signature="e#158#246#0" expanded="false" />
+                <element signature="e#271#362#0" expanded="false" />
+                <element signature="e#427#508#0" expanded="false" />
+                <element signature="e#534#740#0" expanded="false" />
+                <element signature="e#773#909#0" expanded="false" />
+                <element signature="e#1130#4146#0" expanded="false" />
+                <element signature="e#2930#3789#0" expanded="false" />
+                <element signature="e#3934#4146#0" expanded="false" />
+                <element signature="e#4210#6410#0" expanded="false" />
+                <element signature="e#4279#4336#0" expanded="false" />
+                <element signature="e#4380#4638#0" expanded="false" />
+                <element signature="e#4684#4861#0" expanded="false" />
+                <element signature="e#4914#6410#0" expanded="false" />
+                <element signature="e#6478#6605#0" expanded="false" />
+                <element signature="e#6663#7107#0" expanded="false" />
+                <element signature="e#7171#7607#0" expanded="false" />
+                <element signature="e#7693#7830#0" expanded="false" />
+                <element signature="e#7892#8347#0" expanded="false" />
+                <element signature="e#8424#9231#0" expanded="false" />
+                <element signature="e#9276#10095#0" expanded="false" />
+                <element signature="e#10157#11908#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_file.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config_file.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config_file.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -91,17 +111,7 @@
         <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON/angular.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="101" lean-forward="false" selection-start-line="0" selection-start-column="101" selection-end-line="0" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -172,13 +182,15 @@
         <option value="$PROJECT_DIR$/Default (Linux).sublime-keymap" />
         <option value="$PROJECT_DIR$/Default (OSX).sublime-keymap" />
         <option value="$PROJECT_DIR$/fileselection.py" />
-        <option value="$PROJECT_DIR$/global.json" />
-        <option value="$PROJECT_DIR$/JSON/CustomRules.json" />
         <option value="$PROJECT_DIR$/Default (Windows).sublime-keymap" />
         <option value="$PROJECT_DIR$/current_test_rule.txt" />
-        <option value="$PROJECT_DIR$/config_file.txt" />
-        <option value="$PROJECT_DIR$/eslint.py" />
         <option value="$PROJECT_DIR$/Main.sublime-menu" />
+        <option value="$PROJECT_DIR$/fileselection.java" />
+        <option value="$PROJECT_DIR$/FileSelector.java" />
+        <option value="$PROJECT_DIR$/JSON/CustomRules.json" />
+        <option value="$PROJECT_DIR$/global.json" />
+        <option value="$PROJECT_DIR$/eslint.py" />
+        <option value="$PROJECT_DIR$/config_file.txt" />
       </list>
     </option>
   </component>
@@ -224,30 +236,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sublime-eslint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sublime-eslint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sublime-eslint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sublime-eslint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JSON" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -499,10 +487,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24503817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24503817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -510,7 +498,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.4939302" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.48473284" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.48473284" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -548,36 +536,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sublime-eslint.sublime-settings">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit_buffer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asyncprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -671,6 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -746,16 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fileselection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/bmc_test/bmc_testmetadata.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -804,14 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/global.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/cmd/cmdmetadata.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -828,7 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_file.txt">
+    <entry file="file://$PROJECT_DIR$/JSON/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -836,15 +782,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
+    <entry file="file://$PROJECT_DIR$/../../../../Local/Programs/Python/Python35-32/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+        <state relative-caret-position="342">
+          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding>
+            <element signature="e#1142#1224#0" expanded="false" />
+            <element signature="e#1411#1913#0" expanded="false" />
+            <element signature="e#2199#2312#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileselection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/angular.json">
+    <entry file="file://$PROJECT_DIR$/FileSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/variables.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileselection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -862,39 +836,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/global.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="214" column="36" lean-forward="true" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JSON/CustomRules.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/variables.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eslint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="383" column="0" lean-forward="true" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#159#247#0" expanded="false" />
-            <element signature="e#4249#6449#0" expanded="false" />
-            <element signature="e#6517#6644#0" expanded="false" />
-            <element signature="e#10999#13079#0" expanded="false" />
+            <element signature="e#158#246#0" expanded="false" />
+            <element signature="e#271#362#0" expanded="false" />
+            <element signature="e#427#508#0" expanded="false" />
+            <element signature="e#534#740#0" expanded="false" />
+            <element signature="e#773#909#0" expanded="false" />
+            <element signature="e#1130#4146#0" expanded="false" />
+            <element signature="e#2930#3789#0" expanded="false" />
+            <element signature="e#3934#4146#0" expanded="false" />
+            <element signature="e#4210#6410#0" expanded="false" />
+            <element signature="e#4279#4336#0" expanded="false" />
+            <element signature="e#4380#4638#0" expanded="false" />
+            <element signature="e#4684#4861#0" expanded="false" />
+            <element signature="e#4914#6410#0" expanded="false" />
+            <element signature="e#6478#6605#0" expanded="false" />
+            <element signature="e#6663#7107#0" expanded="false" />
+            <element signature="e#7171#7607#0" expanded="false" />
+            <element signature="e#7693#7830#0" expanded="false" />
+            <element signature="e#7892#8347#0" expanded="false" />
+            <element signature="e#8424#9231#0" expanded="false" />
+            <element signature="e#9276#10095#0" expanded="false" />
+            <element signature="e#10157#11908#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="101" lean-forward="false" selection-start-line="0" selection-start-column="101" selection-end-line="0" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
