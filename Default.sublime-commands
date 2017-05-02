@@ -1,7 +1,7 @@
 [
     {
         "caption": "ESLint: Run ESLint",
-        "command": "jslint"
+        "command": "eslint"
     },
     {
         "caption": "ESLint: Show ESLint Result",

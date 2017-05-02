@@ -16,9 +16,6 @@ Installation process
   
   --> npm install -g eslint-config-angular
   
-  if you are a windows user
-    run setup.bat file present in the package
-
 
 ->> Download/clone the repository
 
@@ -41,5 +38,5 @@ Installation process
   3. configure Rules 
   4. import your custom Rules file
   5. reset the configuration(switches back to deafult configuration)
-  
+
 
