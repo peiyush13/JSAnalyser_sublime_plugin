@@ -16,8 +16,7 @@ except ImportError:
     from .statusprocess import *
     from .asyncprocess import *
 
-FOLDER = os.path.dirname(__file__)
-
+FOLDER = os.path.dirname(os.path.realpath(__file__))
 
 def getDefaultConf():
     file_path = os.path.join(FOLDER,"global.json")

@@ -1,10 +1,5 @@
 import os
-
-try:
-    import thread
-except ImportError:
-    import threading
-
+import threading
 import subprocess
 import functools
 import sublime

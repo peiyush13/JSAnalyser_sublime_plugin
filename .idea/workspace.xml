@@ -4,8 +4,9 @@
     <list default="true" id="3cacb7c3-ef30-428f-9da7-74a73138fd8d" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/fileselection.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_file.txt" afterPath="$PROJECT_DIR$/config_file.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/current_test_rule.txt" afterPath="$PROJECT_DIR$/current_test_rule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asyncprocess.py" afterPath="$PROJECT_DIR$/asyncprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eslint.py" afterPath="$PROJECT_DIR$/eslint.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statusprocess.py" afterPath="$PROJECT_DIR$/statusprocess.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,62 +21,46 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.sublime-menu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sublime-eslint.sublime-settings" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sublime-eslint.sublime-settings">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Default (Windows).sublime-keymap" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default (Windows).sublime-keymap">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Default (OSX).sublime-keymap" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default (OSX).sublime-keymap">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="asyncprocess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asyncprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eslint.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eslint.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#158#246#0" expanded="false" />
+                <element signature="e#271#362#0" expanded="false" />
+                <element signature="e#444#525#0" expanded="false" />
+                <element signature="e#551#757#0" expanded="false" />
+                <element signature="e#790#926#0" expanded="false" />
+                <element signature="e#2947#3806#0" expanded="false" />
+                <element signature="e#3951#4163#0" expanded="false" />
+                <element signature="e#4227#6427#0" expanded="false" />
+                <element signature="e#4296#4353#0" expanded="false" />
+                <element signature="e#4397#4655#0" expanded="false" />
+                <element signature="e#4701#4878#0" expanded="false" />
+                <element signature="e#4931#6427#0" expanded="false" />
+                <element signature="e#6495#6622#0" expanded="false" />
+                <element signature="e#6680#7124#0" expanded="false" />
+                <element signature="e#7188#7624#0" expanded="false" />
+                <element signature="e#7710#7847#0" expanded="false" />
+                <element signature="e#7909#8364#0" expanded="false" />
+                <element signature="e#8441#9248#0" expanded="false" />
+                <element signature="e#9293#10112#0" expanded="false" />
+                <element signature="e#10174#11925#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,12 +75,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="current_test_rule.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
+      <file leaf-file-name="edit_buffer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit_buffer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statusprocess.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/statusprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <folding>
+                <element signature="e#1#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,12 +163,9 @@
       <list>
         <option value="$PROJECT_DIR$/sublime-eslint.sublime-settings" />
         <option value="$PROJECT_DIR$/jslint.py" />
-        <option value="$PROJECT_DIR$/statusprocess.py" />
         <option value="$PROJECT_DIR$/sublime.py" />
-        <option value="$PROJECT_DIR$/edit_buffer.py" />
         <option value="$PROJECT_DIR$/importconfig.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/asyncprocess.py" />
         <option value="$PROJECT_DIR$/fileselection.py" />
         <option value="$PROJECT_DIR$/Default (Windows).sublime-keymap" />
         <option value="$PROJECT_DIR$/Main.sublime-menu" />
@@ -177,13 +173,16 @@
         <option value="$PROJECT_DIR$/FileSelector.java" />
         <option value="$PROJECT_DIR$/JSON/CustomRules.json" />
         <option value="$PROJECT_DIR$/global.json" />
-        <option value="$PROJECT_DIR$/eslint.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Default.sublime-commands" />
         <option value="$PROJECT_DIR$/Default (Linux).sublime-keymap" />
         <option value="$PROJECT_DIR$/Default (OSX).sublime-keymap" />
         <option value="$PROJECT_DIR$/config_file.txt" />
         <option value="$PROJECT_DIR$/current_test_rule.txt" />
+        <option value="$PROJECT_DIR$/edit_buffer.py" />
+        <option value="$PROJECT_DIR$/statusprocess.py" />
+        <option value="$PROJECT_DIR$/asyncprocess.py" />
+        <option value="$PROJECT_DIR$/eslint.py" />
       </list>
     </option>
   </component>
@@ -219,8 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,6 +242,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,7 +492,7 @@
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24885496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25648856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +538,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -623,13 +622,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py" />
     <entry file="file://$PROJECT_DIR$/config_file" />
-    <entry file="file://$PROJECT_DIR$/edit_buffer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="80" column="31" lean-forward="false" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Local/Programs/Python/Python35-32/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32045">
@@ -641,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="950" column="24" lean-forward="false" selection-start-line="950" selection-start-column="24" selection-end-line="950" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statusprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -708,42 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eslint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#158#246#0" expanded="false" />
-            <element signature="e#271#362#0" expanded="false" />
-            <element signature="e#427#508#0" expanded="false" />
-            <element signature="e#534#740#0" expanded="false" />
-            <element signature="e#773#909#0" expanded="false" />
-            <element signature="e#1130#4146#0" expanded="false" />
-            <element signature="e#2930#3789#0" expanded="false" />
-            <element signature="e#3934#4146#0" expanded="false" />
-            <element signature="e#4210#6410#0" expanded="false" />
-            <element signature="e#4279#4336#0" expanded="false" />
-            <element signature="e#4380#4638#0" expanded="false" />
-            <element signature="e#4684#4861#0" expanded="false" />
-            <element signature="e#4914#6410#0" expanded="false" />
-            <element signature="e#6478#6605#0" expanded="false" />
-            <element signature="e#6663#7107#0" expanded="false" />
-            <element signature="e#7171#7607#0" expanded="false" />
-            <element signature="e#7693#7830#0" expanded="false" />
-            <element signature="e#7892#8347#0" expanded="false" />
-            <element signature="e#8424#9231#0" expanded="false" />
-            <element signature="e#9276#10095#0" expanded="false" />
-            <element signature="e#10157#11908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JSON/CustomRules.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,31 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3638">
           <caret line="214" column="36" lean-forward="false" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sublime-eslint.sublime-settings">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,14 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default (Windows).sublime-keymap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -803,18 +723,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default (OSX).sublime-keymap">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asyncprocess.py">
+    <entry file="file://$PROJECT_DIR$/sublime-eslint.sublime-settings">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.sublime-menu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default (Windows).sublime-keymap">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <caret line="32" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default (OSX).sublime-keymap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -827,11 +774,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/current_test_rule.txt">
+    <entry file="file://$PROJECT_DIR$/edit_buffer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statusprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <element signature="e#1#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asyncprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eslint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#158#246#0" expanded="false" />
+            <element signature="e#271#362#0" expanded="false" />
+            <element signature="e#444#525#0" expanded="false" />
+            <element signature="e#551#757#0" expanded="false" />
+            <element signature="e#790#926#0" expanded="false" />
+            <element signature="e#2947#3806#0" expanded="false" />
+            <element signature="e#3951#4163#0" expanded="false" />
+            <element signature="e#4227#6427#0" expanded="false" />
+            <element signature="e#4296#4353#0" expanded="false" />
+            <element signature="e#4397#4655#0" expanded="false" />
+            <element signature="e#4701#4878#0" expanded="false" />
+            <element signature="e#4931#6427#0" expanded="false" />
+            <element signature="e#6495#6622#0" expanded="false" />
+            <element signature="e#6680#7124#0" expanded="false" />
+            <element signature="e#7188#7624#0" expanded="false" />
+            <element signature="e#7710#7847#0" expanded="false" />
+            <element signature="e#7909#8364#0" expanded="false" />
+            <element signature="e#8441#9248#0" expanded="false" />
+            <element signature="e#9293#10112#0" expanded="false" />
+            <element signature="e#10174#11925#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
