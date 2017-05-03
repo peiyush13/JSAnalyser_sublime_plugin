@@ -10,7 +10,7 @@ class AsyncProcess(object):
     def __init__(self, cmd, listener):
         self.cmd = cmd
         self.listener = listener
-        self.proc = subprocess.Popen(self.cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        self.proc = subprocess.Popen(self.cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE ,stdin=subprocess.DEVNULL)
 
         try:
             if self.proc.stdout:
