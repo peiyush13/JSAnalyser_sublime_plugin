@@ -18,13 +18,14 @@ except ImportError:
 
 FOLDER = os.path.dirname(os.path.realpath(__file__))
 
+
 def getDefaultConf():
-    file_path = os.path.join(FOLDER,"global.json")
+    file_path = os.path.join(FOLDER, "global.json")
     return "\"" + file_path + "\""
 
 
 def getTempConf():
-    file_path = os.path.join(FOLDER,"config_file.txt")
+    file_path = os.path.join(FOLDER, "config_file.txt")
     file = open(file_path, "r")
     file_path = file.read()
     if not file_path:
@@ -34,7 +35,7 @@ def getTempConf():
 
 
 def getCurrentTestRule():
-    file_path =os.path.join(FOLDER,"current_test_rule.txt")
+    file_path = os.path.join(FOLDER, "current_test_rule.txt")
     file = open(file_path, "r")
     file_path = file.read()
     return file_path
@@ -126,9 +127,12 @@ class EslintCommand(sublime_plugin.WindowCommand):
         data = " ".join(data)
 
         self.show_tests_panel()
-
         with Edit(self.output_view, True) as edit:
-            edit.insert(self.output_view.size(), str(data))
+            try:
+                edit.insert(self.output_view.size(), str(data))
+            except UnicodeEncodeError:
+                edit.insert(self.output_view.size(), unicode(data))
+
 
     def update_status(self, msg, progress):
         sublime.status_message(msg + " " + progress)
@@ -251,13 +255,13 @@ class ConfigCommand(sublime_plugin.WindowCommand):
 class ImportConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
         cmd1 = "cd " + FOLDER
-        cmd = cmd1 +" && "+"java " + "FileSelector"
+        cmd = cmd1 + " && " + "java " + "FileSelector"
         print(cmd)
         process = os.popen(cmd)
         result = process.read()
         result = result.encode('ascii', 'ignore').decode('ascii')
         result = re.split(r'\s{2,}', result)
-        file_path =os.path.join(FOLDER ,"config_file.txt")
+        file_path = os.path.join(FOLDER, "config_file.txt")
         file = open(file_path, "w")
         file.flush()
         file.write(result[0])
@@ -265,7 +269,7 @@ class ImportConfigCommand(sublime_plugin.WindowCommand):
 
 class ResetConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
-        file_path = os.path.join(FOLDER,"config_file.txt")
+        file_path = os.path.join(FOLDER, "config_file.txt")
         file = open(file_path, "w")
         file.flush()
         TEMP_CONFIG_FILE = ""
@@ -277,32 +281,32 @@ class CreateRuleCommand(sublime_plugin.WindowCommand):
         cmd = cmd1 + " && " + "java -jar " + "RuleImport.jar"
         process = os.popen(cmd)
         result = process.read()
-        result = result.encode('ascii', 'ignore').decode('ascii')
-
-        file_name =os.path.basename(result)
-        test_file = result + "test.js"
-
-        self.window.open_file(os.path.join(result, file_name + ".js"))
-        self.window.open_file(os.path.join(result, test_file))
+        if result is not "":
+            result = result.encode('ascii', 'ignore').decode('ascii')
+            file_name = os.path.basename(result)
+            test_file = result + "test.js"
+            self.window.open_file(os.path.join(result, file_name + ".js"))
+            self.window.open_file(os.path.join(result, test_file))
 
 
 class ImportAndTestRuleCommand(EslintCommand):
     def run(self):
         self.init()
         cmd1 = "cd " + FOLDER
-        cmd = cmd1 + " && " + "java " + "FileSelector"+ " Test"
+        cmd = cmd1 + " && " + "java " + "FileSelector" + " Test"
 
         process = os.popen(cmd)
         result = process.read()
         file_name = result.encode('ascii', 'ignore').decode('ascii')
-        folder_name=os.path.dirname(file_name)
-        file_path = os.path.join(FOLDER,"current_test_rule.txt")
+        folder_name = os.path.dirname(file_name)
+        file_path = os.path.join(FOLDER, "current_test_rule.txt")
         file = open(file_path, "w")
         file.flush()
         file.write(file_name)
         file_name = '"' + file_name + '"'
 
-        cmd = 'eslint ' + self.s.get('node_eslint_options','') + ' "' + self.file_path + '"' + " --rulesdir " + '"' + folder_name + '"' + " -c " + file_name
+        cmd = 'eslint ' + self.s.get('node_eslint_options',
+                                     '') + ' "' + self.file_path + '"' + " --rulesdir " + '"' + folder_name + '"' + " -c " + file_name
         print(cmd)
         AsyncProcess(cmd, self)
         StatusProcess('Starting ESLint for file ' + self.file_name, self)
@@ -326,7 +330,8 @@ class TestRuleCommand(EslintCommand):
         folder_name = os.path.dirname(file_name)
         file_name = '"' + file_name + '"'
 
-        cmd = 'eslint ' + self.s.get('node_eslint_options','') + ' "' + self.file_path + '"' + " --rulesdir " + '"' + folder_name + '"' + " -c " + file_name
+        cmd = 'eslint ' + self.s.get('node_eslint_options',
+                                     '') + ' "' + self.file_path + '"' + " --rulesdir " + '"' + folder_name + '"' + " -c " + file_name
 
         AsyncProcess(cmd, self)
         StatusProcess('Starting ESLint for file ' + self.file_name, self)
@@ -343,12 +348,12 @@ class ImportRuleCommand(sublime_plugin.WindowCommand):
         process = os.popen(cmd)
         result = process.read()
         custom_rule_file = result.encode('ascii', 'ignore').decode('ascii')
-        custom_rule_folder=os.path.dirname(custom_rule_file)
+        custom_rule_folder = os.path.dirname(custom_rule_file)
 
-        file_name=os.path.basename(custom_rule_file)
-        rule_name=file_name.replace(".js","")
-        json_file=file_name.replace(".js","metadata.json")
-        json_file=os.path.join(custom_rule_folder,json_file)
+        file_name = os.path.basename(custom_rule_file)
+        rule_name = file_name.replace(".js", "")
+        json_file = file_name.replace(".js", "metadata.json")
+        json_file = os.path.join(custom_rule_folder, json_file)
 
         copy2(custom_rule_file, eslint_lib_path)
         #
