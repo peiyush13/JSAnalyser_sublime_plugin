@@ -227,13 +227,6 @@ class EsLintEventListener(sublime_plugin.EventListener):
             file_view.add_regions(RESULT_VIEW_NAME, [file_region], "comment")
 
 
-class ShowEslintResultCommand(sublime_plugin.WindowCommand):
-    # show Eslint result
-
-    def run(self):
-        self.window.run_command("show_panel", {"panel": "output." + RESULT_VIEW_NAME})
-
-
 class ConfigCommand(sublime_plugin.WindowCommand):
     def run(self):
         GLOBAL_CONFIG_FILE = getDefaultConf()
