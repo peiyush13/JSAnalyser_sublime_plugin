@@ -1,9 +1,3 @@
 [
-  {
-    "Fixable": false, 
-    "Desc": "every variable should start with BMC prefix", 
-    "Recommended": true, 
-    "Link": "http://www.google.com", 
-    "Name": "bmc-prefix-var"
-  }
+
 ]
